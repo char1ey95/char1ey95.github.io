@@ -1,0 +1,143 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #42b45c;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #f0f4f5;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #319d6ec6;
+    --success: #14687b;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --background-color: #366d559e;
+}
+
+:after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro";
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+#wrap {
+    width: 100%;
+    background-color: var(--white);
+}
+
+.navbar {
+    /* position: fixed; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.navbar_logo {
+    font-size: 32px;
+    color: var(--dark);
+}
+
+.navbar_logo > i {
+    color: #d49466;
+    margin: 0 12px 0 8px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-right: 32px;
+}
+
+.navbar_menu > li {
+    font-size: 24px;
+    padding: 8px 12px;
+}
+
+.navbar_menu > li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
+.navbar_toggleBtn {
+    cursor: pointer;
+    display: none;
+    padding: 8px 12px;
+    color: #d49466;
+    font-size: 24px;
+}
+
+.navbar_toggleBtn:hover {
+    color: var(--dark);
+}
+
+#wrap > .main_section::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,rgba(112,93,80,.8) 0,rgba(112,93,80,.8) 90%),url(./img/main.jpg) 50% no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.main_section {
+    position: relative;
+    top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        text-align: center;
+        width: 100%;
+        margin-top: 2px;
+        border: solid 1px rgba(203, 197, 197, 0.5);
+    }
+
+    .navbar_toggleBtn {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 6px;
+    }
+
+    .navbar_menu.on {
+        display: flex;
+    }
+}

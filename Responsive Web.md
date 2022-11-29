@@ -264,3 +264,33 @@
     </body>
 </html>
 ```
+
+# 반응형 크기
+
+## Absolute
+- px 모니터 위에서 화면에 나타낼 수 있는 가장 작은 단위
+    - container의 사이즈가 변경되어도 유지된다.
+    - 사용자가 font-size를 변경해도 변하지 않는다.
+    - 
+## Relative
+- em
+    - relative to parent element
+    - 부모의 폰트 사이즈에 상대적으로 지정된다.
+    - 부모의 폰트 사이즈에 곱한 값으로 계산이된다.
+
+- rem 
+    - relative to root element
+    - 루트의 폰트 사이즈에 상대적으로 지정된다.
+    - 루트의 폰트 사이즈에 곱한 값으로 계산이된다.
+
+- vw 
+    - viewport width
+    - 브라우저의 너비
+    - 100vw : view의 100%를 사용한다.
+
+- vh 
+    - viewport height
+    - 브라우저의 높이
+
+- % 
+    - 부모요소에 상대적으로 크기가 계산된다.
