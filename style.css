@@ -26,6 +26,11 @@
     box-sizing: border-box;
 }
 
+html {
+    /* html에 줘야 작동한다 */
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
@@ -161,12 +166,12 @@ a {
     line-height: 1.5;
 }
 
-.main_txt > div {
+.main_txt > div > a {
     display: inline-block;
     padding: 1rem 2rem;
     border: none;
     border-radius: 10rem;
-    background-color: #f4623a;
+    background-color: #000000;
     font-weight: 400;
     font-size: 1rem;
     text-decoration: none;
@@ -175,9 +180,9 @@ a {
     cursor: pointer;
 }
 
-.main_txt > div:hover {
-    background-color: #dc775b;
-    color: var(--yellow);
+.main_txt > div > a:hover {
+    background-color: silver;
+    color: gold;
 }
 
 .about {
@@ -447,18 +452,32 @@ a {
 
 .pageUpBtn {
     position: fixed;
+    padding-left: 0.5rem;
     right: 2rem;
     bottom: 2rem;
     width: 3rem;
     height: 3rem;
-    border-radius: 0.5rem;
-    background-color: #fff;
+    border-radius: 2rem;
+    background-color: #ececec;
     cursor: pointer;
     opacity: 0.5;
 }
 
-.pageUpBtn > img {
-    width: 100%;
+.pageUpBtn:hover {
+    background-color: #000000;
+    transition: all 1s;
+}
+
+.pageUpBtn > span {
+    margin: 0 auto;
+    color: #000000;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pageUpBtn > span > a:hover {
+    color: white;
 }
 
 .footer {
@@ -496,7 +515,7 @@ a {
 }
 
 
-@media screen and (min-width: 597px) and (max-width: 990px) {
+@media screen and (min-width: 661px) and (max-width: 990px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -546,7 +565,7 @@ a {
     }
 }
 
-@media screen and (max-width: 596px) {
+@media screen and (max-width: 660px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;

@@ -4,17 +4,17 @@
 
   - css fixed 구현하기
 
-- 화면 넓이가 줄었을 때 메뉴버튼이 생긴다.(clear)
+`- 화면 넓이가 줄었을 때 메뉴버튼이 생긴다.(clear)`
 
 # main
 
 - 글자가 지속적으로 흔들린다.
 
   - js setinterval 사용
+  - css animation 사용
 
-- 더 알아보기 버튼 클릭시 About 페이지로 이동한다.
-
-  - 검색
+`- 더 알아보기 버튼 클릭시 About 페이지로 이동한다.(clear)`
+` - css html을 선택하여 [scroll behavior: smooth;] 입력.`
 
 # about
 
@@ -61,9 +61,8 @@
 
 # pageUpButton
 
-- 클릭시, 때 맨 위로 올라간다.
-
-  - 검색
+`- 클릭시, 때 맨 위로 올라간다.(clear)`
+` - css html을 선택하여 [scroll behavior: smooth;] 입력.`
 
 - 맨 아래칸 블로그, 깃헙 아이콘에 마우스 오버시 색 변화
 
@@ -72,6 +71,11 @@
 - 맨 아래칸 블로그, 깃헙 아이콘 클릭시 해당 페이지로 이동
 
   - 검색
+
+# ALL
+
+- 홈 사진과 어울리는 컬러감 찾기
+  - brown계열 혹은 blue 계열
 
 # easter egg
 
