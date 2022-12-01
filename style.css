@@ -64,6 +64,11 @@ a {
     font-weight: 400;
     font-size: 3rem;
     line-height: 1.5;
+    transition: all 1s;
+}
+
+.section_title > .section_title_txt:hover {
+    color: #8d9093;
 }
 
 .navbar {
@@ -73,7 +78,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
 }
 
 .navbar_logo {
@@ -90,25 +95,27 @@ a {
     display: flex;
     list-style: none;
     padding-left: 0;
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 
 .navbar_menu > li {
     font-size: 2rem;
-    padding: 8px 12px;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    transition: all 1s;
 }
 
 .navbar_menu > li:hover {
     background-color: #d49466;
-    border-radius: 4px;
 }
 
 .navbar_toggleBtn {
     cursor: pointer;
     display: none;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     color: #d49466;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .navbar_toggleBtn:hover {
@@ -167,23 +174,43 @@ a {
 }
 
 .main_txt > div > a {
+    position: relative;
     display: inline-block;
     padding: 1rem 2rem;
     border: none;
     border-radius: 10rem;
-    background-color: #000000;
+    background-color: var(--dark);
     font-weight: 400;
     font-size: 1rem;
     text-decoration: none;
     color: var(--white);
     line-height: 1.5;
     cursor: pointer;
+    animation-name: up_down;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 1s;
+}
+
+@keyframes up_down {
+    from {
+        margin-top: 1rem;
+        /* transform: translateY(); */
+        /* transition: all 1s; */
+    }
+
+    to {
+        margin-bottom: 1rem;
+        /* transition: all 1s; */
+    }
 }
 
 .main_txt > div > a:hover {
     background-color: silver;
-    color: gold;
+    color: var(--dark);
 }
+
 
 .about {
     display: block;
@@ -281,14 +308,15 @@ a {
 .skills_tech_stack > .tech_stack_section > img {
     width: 75%;
     bottom: 0;
+    transition: all 1s;
 }
 
 .skills_tech_stack > .tech_stack_section > img:hover {
     position: relative;
-    width: 80%;
-    bottom: 0.75rem;
-    transition: all 1s;
-    rotate: 720deg;
+    bottom: 0.875rem;
+    /* width: 80%; */
+    /* transition: all 1s; */
+    /* rotate: 720deg; */
 }
 
 .project {
@@ -452,7 +480,6 @@ a {
 
 .pageUpBtn {
     position: fixed;
-    padding-left: 0.5rem;
     right: 2rem;
     bottom: 2rem;
     width: 3rem;
@@ -461,11 +488,11 @@ a {
     background-color: #ececec;
     cursor: pointer;
     opacity: 0.5;
+    transition: all 1s;
 }
 
 .pageUpBtn:hover {
     background-color: #000000;
-    transition: all 1s;
 }
 
 .pageUpBtn > span {
@@ -474,6 +501,13 @@ a {
     font-size: 2rem;
     text-align: center;
     vertical-align: middle;
+}
+
+.pageUpBtn > span > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
 }
 
 .pageUpBtn > span > a:hover {
@@ -516,10 +550,14 @@ a {
 
 
 @media screen and (min-width: 661px) and (max-width: 990px) {
+    .navbar_logo {
+        font-size: 1.75rem;
+    }
+    
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 8px 24px;
+        padding: 0.5rem 1.5rem;
     }
 
     .navbar_menu {
@@ -537,10 +575,11 @@ a {
     }
 
     .navbar_toggleBtn {
+        font-size: 1.75rem;
         display: block;
         position: absolute;
-        right: 12px;
-        top: 6px;
+        right: 0.75rem;
+        top: -0.05rem;
     }
 
     .navbar_menu.on {
@@ -570,6 +609,10 @@ a {
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
+    }
+
+    .navbar_logo {
+        font-size: 1.75rem;
     }
 
     .navbar_menu {
