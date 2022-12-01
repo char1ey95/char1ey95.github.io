@@ -89,7 +89,7 @@ a {
 }
 
 .navbar_menu > li {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 8px 12px;
 }
 
@@ -121,7 +121,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(180deg,rgba(112,93,80,.8) 0,rgba(112,93,80,.8) 90%),url(./img/header_img.jpg) 50% no-repeat;
+    background: linear-gradient(180deg,rgba(127, 114, 106,.8) 0,rgba(127, 114, 106,.8) 90%),url(./img/header_img.jpg) 50% no-repeat;
     background-size: cover;
     z-index: -1;
 }
@@ -147,7 +147,7 @@ a {
 .main_txt > hr {
     width: 3.25rem;
     height: 0;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     border: none;
     border-top: 0.2rem solid #f4623a;
     opacity: 1;
@@ -182,6 +182,7 @@ a {
 
 .about {
     display: block;
+    background: var(--white);
 }
 
 .about > .about_wrap {
@@ -212,6 +213,10 @@ a {
     max-width: 14rem;
     margin: 0 auto;
     opacity: 0.8;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-sizing: content-box;
+    padding: 2rem 2rem;
 }
 
 .about_contents > .about_contents_all > .about_contents_wrap > .about_contents_img {
@@ -234,7 +239,7 @@ a {
 }
 
 .skills {
-    background-color: rgba(110, 80, 45, 0.4);
+    background: linear-gradient(120deg, rgba(50, 67, 95, 0.6) 10%, rgba(50, 67, 95, 0.2) 90%);
 }
 
 .skills_contents {
@@ -264,7 +269,8 @@ a {
 .skills_tech_stack > .tech_stack_section {
     position: relative;
     width: 20%;
-    padding: 1rem;
+    padding: 2rem;
+    box-sizing: content-box;
 }
 
 .skills_tech_stack > .tech_stack_section > img {
@@ -274,13 +280,14 @@ a {
 
 .skills_tech_stack > .tech_stack_section > img:hover {
     position: relative;
-    bottom: 0.5rem;
-    transition: all 10s;
-    rotate: 18000deg;
+    width: 80%;
+    bottom: 0.75rem;
+    transition: all 1s;
+    rotate: 720deg;
 }
 
 .project {
-    background-color: #6f42c1;
+    background: linear-gradient(120deg, rgba(143, 134, 129, 0.8) 20%, rgba(143, 134, 129, 0.5) 50%)
 }
 
 .project_contents {
@@ -294,7 +301,7 @@ a {
     padding: 3rem;
     margin: 0 auto 2rem;
     border-radius: 1rem;
-    background-color: var(--white);
+    background: linear-gradient(rgba(223, 228, 222, 0.9) 0, rgba(223, 228, 222, 0.9) 90%);
     box-shadow: 2rem 2rem 2rem 0 rgb(68 68 68 / 20%);
 }
 
@@ -440,8 +447,8 @@ a {
 
 .pageUpBtn {
     position: fixed;
-    right: 1.5rem;
-    bottom: 1.5rem;
+    right: 2rem;
+    bottom: 2rem;
     width: 3rem;
     height: 3rem;
     border-radius: 0.5rem;
