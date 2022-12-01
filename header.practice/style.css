@@ -22,7 +22,7 @@
     --background-color: #366d559e;
 }
 
-:after, :before {
+*, :after, :before {
     box-sizing: border-box;
 }
 
@@ -131,6 +131,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 8.5rem 2rem 4rem;
+    
 }
 
 .main_section > .main_txt_wrap > .main_txt {
@@ -188,7 +189,7 @@ a {
     max-width: 71.25rem;
     padding: 4rem 2rem;
     margin: 0 auto;
-    box-sizing: border-box;
+    
 }
 
 .about_contents {
@@ -233,16 +234,16 @@ a {
 }
 
 .skills {
-    background-color: rgba(123, 93, 41, 0.503);
+    background-color: rgba(110, 80, 45, 0.4);
 }
 
 .skills_contents {
     width: 100%;
     max-width: 71.25rem;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     margin: 0 auto;
-    height: 50rem;
-    box-sizing: border-box;
+    /* height: 50rem; */
+    
 }
 
 .skills_title {
@@ -261,17 +262,234 @@ a {
 }
 
 .skills_tech_stack > .tech_stack_section {
+    position: relative;
     width: 20%;
+    padding: 1rem;
 }
 
-.skills_tech_stack > .tech_stack_section > img{
+.skills_tech_stack > .tech_stack_section > img {
     width: 75%;
-    padding: 1.5rem;
+    bottom: 0;
+}
+
+.skills_tech_stack > .tech_stack_section > img:hover {
+    position: relative;
+    bottom: 0.5rem;
+    transition: all 10s;
+    rotate: 18000deg;
+}
+
+.project {
+    background-color: #6f42c1;
+}
+
+.project_contents {
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.project_board {
+    padding: 3rem;
+    margin: 0 auto 2rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    box-shadow: 2rem 2rem 2rem 0 rgb(68 68 68 / 20%);
+}
+
+.project_title {
+    padding-bottom: 0.5rem;
+    /* font-family: ; */
+    font-weight:400;
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+}
+
+.project_period {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.project_info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project_carousel {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    margin-right: 3rem;
+}
+
+.project_img {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.project_img_wrapper {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    cursor: pointer;
+}
+
+.project_img_wrapper > img {
+    display: block;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.project_nav {
+    height: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.project_prev {
+    display: inline-block;
+    margin: 0 1rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+/* .project_prev:hover {
+    font-size: 1.25rem;
+    transition: all 1s;
+} */
+
+.project_page {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #444;
+}
+
+.project_next {
+    display: inline-block;
+    margin: 0 1rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+/* .project_next:hover {
+    font-size: 1.25rem;
+    transition: all 1s;
+} */
+
+.project_descriptions {
+    width: calc(50% - 3rem);
+}
+
+.porject_main_description {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.project_red {
+    color: #ed3770;
+}
+
+.project_description {
+    margin-bottom: 1rem;
+}
+
+.project_showBtn {
+    display: table;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #222;
+    border-radius: 0.4rem;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.project_label::before {
+    content: "✔";
+    display: inline;
+    padding-right: 0.5rem;
+}
+
+.project_label {
+    display: inline-block;
+    vertical-align: top;
+    width: 8.4rem;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.project_value {
+    display: inline-block;
+    vertical-align: bottom;
+    width: calc(100% - 8.4rem);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pageUpBtn {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.pageUpBtn > img {
+    width: 100%;
+}
+
+.footer {
+    height: 11rem;
+    padding-top: 3rem;
+    background-color: #222;
+    text-align: center;
+}
+
+.footer_icons {
+    margin-bottom: 1rem;
+}
+
+.footer_icons_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding: 2px;
+    margin: 0 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--light);
+}
+
+.footer_icons_wrapper > img {
+    width: 100%;
+}
+
+.footer_copyright {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #f5f5f5;
+    text-align: center;
 }
 
 
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 597px) and (max-width: 990px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -308,4 +526,74 @@ a {
         width: 50%;
     }
 
+    .project_carousel {
+        width: 100%;
+    }
+
+    .project_descriptions {
+        width: calc(100% - 3rem);
+    }
+
+    .project_info {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        text-align: center;
+        width: 100%;
+        margin-top: 0.25rem;
+        border: solid 1px rgba(203, 197, 197, 0.5);
+    }
+
+    .navbar_toggleBtn {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 6px;
+    }
+
+    .navbar_menu.on {
+        display: flex;
+    }
+
+    .main_txt > h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .about_contents > .about_contents_all {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .skills_tech_stack > .tech_stack_section > img{
+        width: 80%;
+    }
+
+    .project_carousel {
+        width: 100%;
+    }
+
+    .project_descriptions {
+        width: calc(100% - 3rem);
+    }
+
+    .project_info {
+        display: block;
+    }
 }
