@@ -46,17 +46,25 @@ a {
     color: var(--dark);
 }
 
+.observer_opacity {
+    position: relative;
+    bottom: -3rem;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.observer_opacity_2 {
+    /* position: relative; */
+    bottom: -3rem;
+    opacity: 0;
+    transition: all 2s;
+}
+
 #wrap {
     width: 100%;
     /* background-color: var(--white);
     animation-name: loading;
     animation */
-}
-
-article {
-    opacity: 0;
-    transition: all 1.5s;
-    /* transition-delay: 0.5s; */
 }
 
 .section_title {
@@ -80,7 +88,6 @@ article {
 }
 
 .navbar {
-    /* position: fixed; */
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -132,7 +139,7 @@ article {
 
 .main_section {
     position: relative;
-    height: 54rem;
+    height: 60rem;
 }
 
 .main_section::before {
@@ -142,7 +149,7 @@ article {
     right: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(180deg,rgba(127, 114, 106,.8) 0,rgba(127, 114, 106,.8) 90%),url(../../img/main.jpg) 50% no-repeat;
+    background: linear-gradient(180deg, rgba(127, 114, 106, .4) 0%, rgba(179, 161, 130, 1) 100%), url(../../img/main.jpg) 70% no-repeat;
     background-size: cover;
     z-index: -1;
 }
@@ -238,8 +245,9 @@ article {
 
 
 .about {
+    padding: 5rem 0;
     display: block;
-    background: var(--white);
+    background: linear-gradient(180deg, rgba(179, 161, 130, 1) 30%, rgba(230, 183, 99, 0.5) 70%);
 }
 
 .about > .about_wrap {
@@ -247,7 +255,6 @@ article {
     max-width: 71.25rem;
     padding: 4rem 2rem;
     margin: 0 auto;
-    
 }
 
 .about_contents {
@@ -266,14 +273,14 @@ article {
 .about_contents > .about_contents_all > .about_contents_wrap {
     display: flex;
     flex-flow: row nowrap;
+    padding: 2rem;
+    margin: 2rem auto;
     width: 100%;
     max-width: 14rem;
-    margin: 0 auto;
     opacity: 0.8;
     background-color: white;
     border-radius: 0.75rem;
     box-sizing: content-box;
-    padding: 2rem 2rem;
 }
 
 .about_contents > .about_contents_all > .about_contents_wrap > .about_contents_img {
@@ -296,8 +303,9 @@ article {
 }
 
 .skills {
-    height: 60rem;
-    background: linear-gradient(120deg, rgba(50, 67, 95, 0.6) 10%, rgba(50, 67, 95, 0.2) 90%);
+    height: 70rem;
+    background: linear-gradient(0, rgba(30, 183, 99, 0.2) 30%, rgba(230, 183, 99, 0.5) 70%);
+    /* background: linear-gradient(120deg, rgba(230, 183, 99, 0.6) 10%, rgba(230, 183, 99, 0.2) 90%); */
 }
 
 .skills_contents {
@@ -315,24 +323,33 @@ article {
     margin: 0 auto 3rem;
 }
 
+.skill_wrap {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .skills_tech_stack{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: inline-block; */
+    /* width: 24%; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    position: relative;
     background-color: #f0f4f5;
     border-radius: 2rem;
-    margin-top: 3rem;
+    margin: 2rem;
 }
 
 .skills_tech_stack > .tech_stack_section {
-    position: relative;
-    width: 20%;
+    /* position: relative; */
+    margin: 0 auto;
+    width: 45%;
     padding: 2rem;
     box-sizing: content-box;
 }
 
 .skills_tech_stack > .tech_stack_section > img {
-    width: 75%;
+    width: 100%;
     bottom: 0;
     transition: all 1s;
 }
@@ -346,7 +363,7 @@ article {
 }
 
 .project {
-    background: linear-gradient(120deg, rgba(143, 134, 129, 0.8) 20%, rgba(143, 134, 129, 0.5) 50%)
+    background: linear-gradient(0deg, rgba(81, 140, 125, 1) 20%, rgba(30, 183, 99, 0.2) 90%)
 }
 
 .project_contents {
@@ -358,14 +375,14 @@ article {
 
 .project_board {
     position: relative;
-    left: -600px;
     /* left: -110%; */
     /* left: 0; */
     padding: 3rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto 5rem;
     border-radius: 1rem;
     background: linear-gradient(rgba(223, 228, 222, 0.9) 0, rgba(223, 228, 222, 0.9) 90%);
     box-shadow: 2rem 2rem 2rem 0 rgb(68 68 68 / 20%);
+    opacity: 0;
     transition: all 1s;
 }
 
@@ -579,7 +596,7 @@ article {
     background-color: var(--yellow);
 }
 
-.footer_icons_wrapper > img {
+.footer_icons_wrapper > a > img {
     width: 100%;
 }
 
@@ -629,8 +646,18 @@ article {
     }
 
     .about_contents > .about_contents_all {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         width: 50%;
+    }
+
+    .skills {
+        height: 90rem;
+    }
+
+    .skill_wrap {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .project_carousel {
@@ -687,13 +714,28 @@ article {
         font-weight: 300;
     }
 
-    .about_contents > .about_contents_all {
-        margin-bottom: 2rem;
+    .about_contents > .about_contents_all > .about_contents_wrap {
         width: 100%;
+    }
+
+    .about_contents > .about_contents_all {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .skills {
+        height: 160rem;
+    }
+
+    .skill_wrap {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .skills_tech_stack > .tech_stack_section > img{
         width: 80%;
+        margin-left: 1rem;
     }
 
     .project_carousel {
