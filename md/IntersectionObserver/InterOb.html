@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                background: black;
+                height: 100vh;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 4rem;
+            }
+
+            div {
+                margin-top: 1000px;
+                color: white;
+                text-align: center;
+                opacity: 0;
+                transition: all 3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div>가나다라마바사아자차카타파하</div>
+        <div>갸냐댜랴먀뱌샤야쟈챠캬탸퍄햐</div>
+        <div>고노도로모보소오조초코토포호</div>
+        <div>교뇨됴료묘뵤쇼요죠쵸쿄툐표효</div>
+        <div>구누두루무부수우주추쿠투푸후</div>
+        <div>규뉴듀류뮤뷰슈유쥬츄큐튜퓨휴</div>
+        <div>그느드르므브스으즈츠크트프흐</div>
+        <div>기니디리미비시이지치키티피히</div>
+
+        <script>
+            // 1. IntersectionObserver를 변수에 담는다.
+            let observer = new IntersectionObserver((e)=>{
+                // 3. 감시중 박스가 화면에 등장하면 이 블럭의 코드가 실행된다.
+                // +) 화면에서 보이지 않을때에도 실행된다.
+                // 따라서, if문으로 화면에 보일때만 실행되도록 한다.
+                e.forEach((box)=>{
+                    // isIntersecting
+                    // IntersectionRatio
+                    if(box.isIntersecting){
+                    box.target.style.opacity = 1;
+                    } else {
+                        box.target.style.opacity = 0;
+                    }
+                })
+            })
+
+            let div = document.querySelectorAll('div')
+
+            // 2. observer.observe(), 특정 요소를 감시해준다.
+            observer.observe(div[0])
+            observer.observe(div[1])
+            observer.observe(div[2])
+            observer.observe(div[3])
+            observer.observe(div[4])
+            observer.observe(div[5])
+            observer.observe(div[6])
+            observer.observe(div[7])
+
+        </script>
+    </body>
+</html>

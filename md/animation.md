@@ -55,6 +55,8 @@
 - from : 시작지점(어디서부터)
 - to : 종료지점(어디까지)
 
+- css 부분에 top이나 bottom이 부드럽게 먹지 않는다...
+
 ```html
 <head>
   <style>

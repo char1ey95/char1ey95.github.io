@@ -48,7 +48,15 @@ a {
 
 #wrap {
     width: 100%;
-    /* background-color: var(--white); */
+    /* background-color: var(--white);
+    animation-name: loading;
+    animation */
+}
+
+article {
+    opacity: 0;
+    transition: all 1.5s;
+    /* transition-delay: 0.5s; */
 }
 
 .section_title {
@@ -64,7 +72,7 @@ a {
     font-weight: 400;
     font-size: 3rem;
     line-height: 1.5;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .section_title > .section_title_txt:hover {
@@ -124,6 +132,7 @@ a {
 
 .main_section {
     position: relative;
+    height: 54rem;
 }
 
 .main_section::before {
@@ -133,7 +142,7 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(180deg,rgba(127, 114, 106,.8) 0,rgba(127, 114, 106,.8) 90%),url(./img/header_img.jpg) 50% no-repeat;
+    background: linear-gradient(180deg,rgba(127, 114, 106,.8) 0,rgba(127, 114, 106,.8) 90%),url(../../img/main.jpg) 50% no-repeat;
     background-size: cover;
     z-index: -1;
 }
@@ -149,6 +158,20 @@ a {
 .main_section > .main_txt_wrap > .main_txt {
     text-align: center;
     color: var(--white);
+    animation-name: change_color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes change_color {
+    from {
+        color: rgba(240, 244, 245, 1)
+    }
+
+    to {
+        color: rgba(240, 244, 245, 0.5)
+    }
 }
 
 .main_txt > h1 {
@@ -175,6 +198,7 @@ a {
 
 .main_txt > div > a {
     position: relative;
+    top: 4rem;
     display: inline-block;
     padding: 1rem 2rem;
     border: none;
@@ -190,6 +214,7 @@ a {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.65, 0.13, 0.27, 0.82);
     transition: all 1s;
 }
 
@@ -271,6 +296,7 @@ a {
 }
 
 .skills {
+    height: 60rem;
     background: linear-gradient(120deg, rgba(50, 67, 95, 0.6) 10%, rgba(50, 67, 95, 0.2) 90%);
 }
 
@@ -331,11 +357,16 @@ a {
 }
 
 .project_board {
+    position: relative;
+    left: -600px;
+    /* left: -110%; */
+    /* left: 0; */
     padding: 3rem;
     margin: 0 auto 2rem;
     border-radius: 1rem;
     background: linear-gradient(rgba(223, 228, 222, 0.9) 0, rgba(223, 228, 222, 0.9) 90%);
     box-shadow: 2rem 2rem 2rem 0 rgb(68 68 68 / 20%);
+    transition: all 1s;
 }
 
 .project_title {
@@ -447,13 +478,19 @@ a {
 }
 
 .project_showBtn {
+    cursor: pointer;
     display: table;
     margin-bottom: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #222;
-    border-radius: 0.4rem;
     color: var(--light);
-    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: #222;
+    transition: all 0.5s;
+}
+
+.project_showBtn:hover {
+    color: #222;
+    background-color: var(--light);
 }
 
 .project_label::before {
@@ -526,15 +563,20 @@ a {
 }
 
 .footer_icons_wrapper {
+    cursor: pointer;
     position: relative;
     display: inline-block;
-    width: 3rem;
-    height: 3rem;
     padding: 2px;
     margin: 0 0.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 2rem;
-    cursor: pointer;
     background-color: var(--light);
+    transition: all 1s;
+}
+
+.footer_icons_wrapper:hover {
+    background-color: var(--yellow);
 }
 
 .footer_icons_wrapper > img {
@@ -664,5 +706,13 @@ a {
 
     .project_info {
         display: block;
+    }
+    
+    .project_label {
+        width: 100%;
+    }
+
+    .project_value {
+        width: 100%;
     }
 }

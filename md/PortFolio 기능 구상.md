@@ -8,25 +8,25 @@
 
 # main
 
-- 글자가 지속적으로 흔들린다.
+<!-- - 글자가 지속적으로 흔들린다. (정신사나워서 보류)
 
   - js setinterval 사용
-  - css animation 사용
+  - css animation 사용 -->
 
 `- 더 알아보기 버튼 클릭시 About 페이지로 이동한다.(clear)`
 ` - css html을 선택하여 [scroll behavior: smooth;] 입력.`
 
+- `더 알아보기 버튼 위 아래로 움직인다.(clear)`
+
 # about
 
-- 스크롤시 생겨난다.(opacity)
-
-  - intersectionObserver
+`- 스크롤시 생겨난다.(opacity) (clear)`
+`  - intersectionObserver`
 
 # skills
 
-- 스크롤시 생겨난다.(opacity)
-
-  - intersectionObserver
+`- 스크롤시 생겨난다.(opacity)`
+`  - intersectionObserver`
 
 - 클릭시 부연설명 띄우기.(프로젝트 목록)
 
@@ -39,9 +39,8 @@
 
 # projects
 
-- 스크롤시 생겨난다.(opacity)
-
-  - intersectionObserver
+`- 스크롤시 생겨난다.(opacity)`
+`  - intersectionObserver`
 
 - 버튼 슬라이드 구현
 
