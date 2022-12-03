@@ -628,9 +628,15 @@ a {
 
     .navbar_menu li {
         text-align: center;
+        margin: 0.25rem 0;
+        padding: 0;
         width: 100%;
-        margin-top: 2px;
         border: solid 1px rgba(203, 197, 197, 0.5);
+    }
+
+    .navbar_menu li a {
+        display: inline-block;
+        width: 100%;
     }
 
     .navbar_toggleBtn {
@@ -693,8 +699,9 @@ a {
 
     .navbar_menu li {
         text-align: center;
+        margin: 0.25rem 0;
+        padding: 0;
         width: 100%;
-        margin-top: 0.25rem;
         border: solid 1px rgba(203, 197, 197, 0.5);
     }
 
@@ -731,6 +738,7 @@ a {
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
     }
 
     .skills_tech_stack > .tech_stack_section > img{
