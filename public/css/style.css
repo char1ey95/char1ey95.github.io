@@ -98,8 +98,16 @@ a {
 }
 
 .header_background_color {
-    background-color: #fff;
+    background-color: #ececec;
     box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
+}
+
+.header_background_color > .header_content > .header_title {
+    color: #453a33;
+}
+
+.header_background_color > .header_content > .header_navigation_menus > .header_navigation_menu {
+    color: #453a33;
 }
 
 .header_content {
@@ -118,6 +126,7 @@ a {
     line-height: 2rem;
     cursor: pointer;
 }
+
 
 .hamburger_btn {
     display: none;

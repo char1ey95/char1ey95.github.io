@@ -9,12 +9,13 @@ hamburger_btn.addEventListener("click", () => {
     }
 })
 
-const header = 
+const header = document.querySelector(".header")
+const header_title = document.querySelector(".header_title")
 
 window.addEventListener("scroll", ()=>{
-    if(window.scrollY >= 1000){
-
+    if(window.scrollY <= 800){
+        header.classList.remove("header_background_color")
     } else {
-
+        header.classList.add("header_background_color")
     }
 })
