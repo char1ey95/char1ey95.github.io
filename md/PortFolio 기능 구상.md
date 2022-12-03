@@ -1,8 +1,7 @@
 # navbar
 
-- fixed로 스크롤이 내려갔을경우 따라내려온다.
-
-  - css fixed 구현하기
+`- fixed로 스크롤이 내려갔을경우 따라내려온다.(clear)`
+`  - css fixed 구현하기`
 
 `- 화면 넓이가 줄었을 때 메뉴버튼이 생긴다.(clear)`
 
@@ -16,7 +15,9 @@
 `- 더 알아보기 버튼 클릭시 About 페이지로 이동한다.(clear)`
 ` - css html을 선택하여 [scroll behavior: smooth;] 입력.`
 
-- `더 알아보기 버튼 위 아래로 움직인다.(clear)`
+`- 더 알아보기 버튼 위 아래로 움직인다.(clear)`
+
+`- 메인 글자에 음영넣기`
 
 # about
 

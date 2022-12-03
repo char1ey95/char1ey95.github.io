@@ -110,6 +110,9 @@ a {
     color: #453a33;
 }
 
+.header_background_color > .header_content > .header_navigation_menus:hover > .header_navigation_menu {
+    color: #ececec;
+}
 .header_content {
     width: 100%;
     max-width: 71.25rem;
@@ -137,13 +140,19 @@ a {
 }
 
 .header_navigation_menu {
+    cursor: pointer;
     display: inline-block;
     padding: 0 1rem;
     font-weight: 700;
     font-size: 1rem;
     color: hsla(0, 0%, 100%, 0.7);
     line-height: 2rem;
-    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 1s;
+}
+
+.header_navigation_menu:hover {
+    background-color: #453a33;
 }
 
 .main_section {
@@ -173,9 +182,10 @@ a {
 
 .main_section > .main_txt_wrap > .main_txt {
     text-align: center;
-    color: var(--white);
+    text-shadow: 3px 3px 2px gray;
+    /* color: var(--white); */
     animation-name: change_color;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
