@@ -8,3 +8,13 @@ hamburger_btn.addEventListener("click", () => {
         menus.style.maxHeight = "0rem"
     }
 })
+
+const header = 
+
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY >= 1000){
+
+    } else {
+
+    }
+})
