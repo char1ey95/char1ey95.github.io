@@ -3,14 +3,11 @@ const observer_opacity = document.querySelectorAll('.observer_opacity')
 let observer = new IntersectionObserver((e)=>{
     e.forEach((box) => {
         if(box.isIntersecting){
-            box.target.style.opacity = 1;
-            box.target.style.bottom = 0;
-            box.target.style.padding = "2.5rem";
+            box.target.classList.remove("observer_opacity")
+            box.target.classList.add("observer_opacity__1")
         } else {
-            box.target.style.opacity = 0;
-            box.target.style.bottom = "-3rem";
-            box.target.style.padding = "2rem";
-            // box.target.style.background = tranparent;
+            box.target.classList.remove("observer_opacity__1")
+            box.target.classList.add("observer_opacity")
         }
     })
 })

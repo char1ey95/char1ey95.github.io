@@ -48,8 +48,17 @@ a {
 
 .observer_opacity {
     position: relative;
+    padding: 2rem;
     bottom: -3rem;
     opacity: 0;
+    transition: all 1.5s;
+}
+
+.observer_opacity__1 {
+    position: relative;
+    padding: 2.5rem;
+    bottom: 0;
+    opacity: 1;
     transition: all 1.5s;
 }
 
@@ -62,9 +71,6 @@ a {
 
 #wrap {
     width: 100%;
-    /* background-color: var(--white);
-    animation-name: loading;
-    animation */
 }
 
 .section_title {
@@ -382,7 +388,7 @@ a {
 }
 
 .project {
-    background: linear-gradient(0deg, rgba(81, 140, 125, 1) 20%, rgba(30, 183, 99, 0.2) 90%)
+    background: linear-gradient(0deg, rgba(81, 140, 125, 1) 20%, rgba(30, 183, 99, 0.2) 90%);
 }
 
 .project_contents {
@@ -430,8 +436,8 @@ a {
 }
 
 .project_carousel {
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
     width: 50%;
     margin-right: 3rem;
 }
@@ -469,11 +475,6 @@ a {
     cursor: pointer;
 }
 
-/* .project_prev:hover {
-    font-size: 1.25rem;
-    transition: all 1s;
-} */
-
 .project_page {
     display: inline-block;
     font-weight: 400;
@@ -482,16 +483,11 @@ a {
 }
 
 .project_next {
+    cursor: pointer;
     display: inline-block;
     margin: 0 1rem;
     width: 1rem;
-    cursor: pointer;
 }
-
-/* .project_next:hover {
-    font-size: 1.25rem;
-    transition: all 1s;
-} */
 
 .project_descriptions {
     width: calc(50% - 3rem);
@@ -607,12 +603,16 @@ a {
     width: 3rem;
     height: 3rem;
     border-radius: 2rem;
-    background-color: var(--light);
-    transition: all 1s;
+    background-color: #212121;
+    transition: all 0.2s;
+}
+
+.footer_icons_wrapper:nth-child(1){
+    background-color: #f1f1f1;
 }
 
 .footer_icons_wrapper:hover {
-    background-color: var(--yellow);
+    background-color: rgba(119, 114, 83, 0.499);
 }
 
 .footer_icons_wrapper > a > img {
