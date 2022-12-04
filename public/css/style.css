@@ -887,6 +887,21 @@ a {
         margin-left: 1rem;
     }
 
+    .project_button {
+        cursor: pointer;
+        display: inline-block;
+        width: 2rem;
+        height: 1rem;
+        background-color: #454545;
+        text-align: center;
+        border-radius: 0.4rem;
+        transition: all 0.3s;
+    }
+    
+    .project_button:hover {
+        width: 3rem;
+    }
+
     .project_carousel {
         width: 100%;
     }
