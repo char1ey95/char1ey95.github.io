@@ -872,7 +872,7 @@ a {
     }
 
     .skills {
-        height: 160rem;
+        height: 140rem;
     }
 
     .skill_wrap {
@@ -887,10 +887,14 @@ a {
         margin-left: 1rem;
     }
 
+    .project_buttons {
+        width: 90%;
+    }
+
     .project_button {
         cursor: pointer;
         display: inline-block;
-        width: 2rem;
+        width: 3rem;
         height: 1rem;
         background-color: #454545;
         text-align: center;
@@ -899,7 +903,7 @@ a {
     }
     
     .project_button:hover {
-        width: 3rem;
+        width: 5rem;
     }
 
     .project_carousel {
