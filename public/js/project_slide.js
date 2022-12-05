@@ -9,37 +9,6 @@ const img = document.querySelectorAll(".project_img_wrapper")
 // console.log(project_button[0])
 // console.log(project_board[0])
 
-project_button[0].addEventListener("click", (e) => {
-    img[0].classList.add("img_display")
-    project_board[0].classList.add("project_display")
-    project_board[1].classList.remove("project_display")
-    project_board[2].classList.remove("project_display")
-    project_board[3].classList.remove("project_display")
-})
-
-project_button[1].addEventListener("click", (e) => {
-    img[5].classList.add("img_display")
-    project_board[0].classList.remove("project_display")
-    project_board[1].classList.add("project_display")
-    project_board[2].classList.remove("project_display")
-    project_board[3].classList.remove("project_display")
-})
-
-project_button[2].addEventListener("click", (e) => {
-    img[10].classList.add("img_display")
-    project_board[0].classList.remove("project_display")
-    project_board[1].classList.remove("project_display")
-    project_board[2].classList.add("project_display")
-    project_board[3].classList.remove("project_display")
-})
-
-project_button[3].addEventListener("click", (e) => {
-    img[15].classList.add("img_display")
-    project_board[0].classList.remove("project_display")
-    project_board[1].classList.remove("project_display")
-    project_board[2].classList.remove("project_display")
-    project_board[3].classList.add("project_display")
-})
 
 
 
@@ -110,4 +79,41 @@ next[3].addEventListener("click",() => {
         img[i_4+1].classList.add("img_display")
         i_4 = i_4 + 1
     }
+})
+
+
+project_button[0].addEventListener("click", (e) => {
+    img[0].classList.add("img_display")
+    i_1 = 0
+    project_board[0].classList.add("project_display")
+    project_board[1].classList.remove("project_display")
+    project_board[2].classList.remove("project_display")
+    project_board[3].classList.remove("project_display")
+})
+
+project_button[1].addEventListener("click", (e) => {
+    img[5].classList.add("img_display")
+    i_2 = 5
+    project_board[0].classList.remove("project_display")
+    project_board[1].classList.add("project_display")
+    project_board[2].classList.remove("project_display")
+    project_board[3].classList.remove("project_display")
+})
+
+project_button[2].addEventListener("click", (e) => {
+    img[10].classList.add("img_display")
+    i_3 = 10
+    project_board[0].classList.remove("project_display")
+    project_board[1].classList.remove("project_display")
+    project_board[2].classList.add("project_display")
+    project_board[3].classList.remove("project_display")
+})
+
+project_button[3].addEventListener("click", (e) => {
+    img[15].classList.add("img_display")
+    i_4 = 15
+    project_board[0].classList.remove("project_display")
+    project_board[1].classList.remove("project_display")
+    project_board[2].classList.remove("project_display")
+    project_board[3].classList.add("project_display")
 })
