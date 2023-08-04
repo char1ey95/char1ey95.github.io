@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+span {
+	@apply dark:text-white;
+}
+
+/* header */
+
+.header_wrap {
+	@apply text-gray-600 font-bold bg-white;
+}
+
+.header_wrap_md {
+	@apply md:bg-transparent;
+}
+
+.header {
+	@apply container mx-auto p-5 flex flex-wrap flex-row items-center justify-between;
+}
+
+.header_md {
+	@apply md:flex-row;
+}
+
+.nav {
+	@apply invisible text-base flex flex-wrap items-center justify-center;
+}
+
+.nav_md {
+	@apply md:visible md:ml-auto md:mr-auto;
+}
