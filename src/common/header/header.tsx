@@ -1,6 +1,7 @@
 import Logo from "@/components/logo/Logo"
 import Link from "next/link"
 import DarkModeBtn from "@/components/button/darkModeBtn"
+import HamburgerBtn from "@/components/button/hamburgerBtn"
 
 const Header = () => {
     return (
@@ -13,7 +14,10 @@ const Header = () => {
                     <Link href={"/skills"} className="mr-5 hover:text-gray-900">Skill</Link>
                     <Link href={"/projects"} className="mr-5 hover:text-gray-900">Project</Link>
                 </nav>
-                <DarkModeBtn />
+                <div className="">
+                    <HamburgerBtn />
+                    <DarkModeBtn />
+                </div>
             </div>
         </header>
     )
