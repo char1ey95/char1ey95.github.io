@@ -8,16 +8,14 @@ const Header = () => {
         <header className="header_wrap header_wrap_md">
             <div className="header header_md">
                 <Logo />
+                {/* <HamburgerBtn /> */}
                 <nav className="nav nav_md">
                     <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
                     <Link href={"/about"} className="mr-5 hover:text-gray-900">About</Link>
                     <Link href={"/skills"} className="mr-5 hover:text-gray-900">Skill</Link>
                     <Link href={"/projects"} className="mr-5 hover:text-gray-900">Project</Link>
                 </nav>
-                <div className="w-24 flex items-center justify-between">
-                    <HamburgerBtn />
-                    <DarkModeBtn />
-                </div>
+                <DarkModeBtn />
             </div>
         </header>
     )

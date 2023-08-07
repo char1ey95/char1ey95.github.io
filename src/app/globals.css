@@ -25,7 +25,11 @@ span {
 }
 
 .nav {
-	@apply w-0 h-0 invisible text-base flex flex-wrap items-center justify-center;
+	@apply flex text-base flex-wrap items-center justify-center;
+}
+
+.nav a {
+	@apply max-[350px]:text-xs;
 }
 
 .nav_md {
