@@ -41,6 +41,10 @@ span {
 	@apply relative w-8 h-6;
 }
 
+.hamburger_md {
+	@apply relative md:w-0 md:h-0 md:hidden;
+}
+
 .hamburger span {
 	@apply absolute left-0 w-full h-1 bg-slate-600 rounded;
 }

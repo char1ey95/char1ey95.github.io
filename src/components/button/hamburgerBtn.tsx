@@ -1,5 +1,4 @@
 'use client'
-
 import { useRef } from "react";
 
 const HamburgerBtn = () => {
@@ -11,7 +10,7 @@ const HamburgerBtn = () => {
     }
 
     return (
-        <div className="hamburger" ref={hamburger} onClick={handleClick}>
+        <div className="hamburger hamburger_md" ref={hamburger} onClick={handleClick}>
             <span></span>
             <span></span>
             <span></span>
