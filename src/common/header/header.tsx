@@ -11,7 +11,7 @@ const Header = () => {
                 {/* <HamburgerBtn /> */}
                 <nav className="nav nav_md">
                     <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
-                    <Link href={"/about"} className="mr-5 hover:text-gray-900">About</Link>
+                    <Link href={"/abouts"} className="mr-5 hover:text-gray-900">About</Link>
                     <Link href={"/skills"} className="mr-5 hover:text-gray-900">Skill</Link>
                     <Link href={"/projects"} className="mr-5 hover:text-gray-900">Project</Link>
                 </nav>
