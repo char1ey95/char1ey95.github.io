@@ -14,7 +14,7 @@ const Header = () => {
                     <Link href={"/skills"} className="mr-5 hover:text-gray-900">Skill</Link>
                     <Link href={"/projects"} className="mr-5 hover:text-gray-900">Project</Link>
                 </nav>
-                <div className="">
+                <div className="w-24 flex items-center justify-between">
                     <HamburgerBtn />
                     <DarkModeBtn />
                 </div>
