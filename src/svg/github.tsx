@@ -1,7 +1,7 @@
 const GithubSvg = () => {
-    return (
-        <svg className="w-5 h-5 " version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve" fill="#9DA4B1">
-            <path fillRule="evenodd" d="
+	return (
+		<svg className="w-5 h-5 " version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1.25rem" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve" fill="currentColor">
+			<path fillRule="evenodd" d="
 M178.468658,513.000000 
 	C178.133606,512.900391 178.252884,512.761780 178.402863,512.706726 
 	C192.640549,507.481201 192.920349,507.068481 192.860641,491.474976 
@@ -80,8 +80,8 @@ M104.763115,374.412109
 	C104.838226,379.405792 106.314636,380.368164 107.300278,378.837830 
 	C108.597130,376.824219 107.106613,375.520752 104.763115,374.412109 
 z" />
-        </svg>
-    )
+		</svg>
+	)
 }
 
 export default GithubSvg
