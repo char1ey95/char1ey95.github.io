@@ -84,6 +84,8 @@ span {
 	@apply -translate-y-2.5 rotate-45;
 } */
 
+/* header */
+
 .menu_wrap > li > a {
 	@apply text-xl px-4 py-1 mx-2 rounded-md;
 }
@@ -91,3 +93,23 @@ span {
 .menu_wrap > li > a:hover {
 	@apply text-xl px-4 py-1 bg-black text-white;
 }
+
+/* hero */
+
+.hero_font {
+	@apply text-center text-5xl font-normal leading-normal;
+}
+
+.hero_content_font {
+	@apply text-center text-lg font-normal leading-normal;
+}
+
+.hero_btn > button {
+	@apply flex w-52 py-2.5 px-[2.125rem] justify-center items-center gap-2.5 shrink-0 rounded-lg bg-slate-900 text-slate-200 text-2xl font-normal transition-all;
+}
+
+.hero_btn > button:hover {
+	@apply text-slate-900 bg-slate-200;
+}
+
+/* About */
