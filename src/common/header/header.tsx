@@ -5,18 +5,37 @@ import HamburgerBtn from "@/components/button/hamburgerBtn"
 
 const Header = () => {
     return (
-        <header className="header_wrap header_wrap_md">
-            <div className="header header_md">
+        <header className="flex justify-between h-16 items-center">
+            <div className="px-4 py-1">
                 <Logo />
-                {/* <HamburgerBtn /> */}
-                <nav className="nav nav_md">
-                    <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
-                    <Link href={"/abouts"} className="mr-5 hover:text-gray-900">About</Link>
-                    <Link href={"/skills"} className="mr-5 hover:text-gray-900">Skill</Link>
-                    <Link href={"/projects"} className="mr-5 hover:text-gray-900">Project</Link>
-                </nav>
-                <DarkModeBtn />
             </div>
+            <ul className="flex justify-between menu_wrap">
+                <li>
+                    <Link href={"/"}>
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link href={"/abouts"}>
+                        About
+                    </Link>
+                </li>
+                <li>
+                    <Link href={"/skills"}>
+                        Skills
+                    </Link>
+                </li>
+                <li>
+                    <Link href={"/projects"}>
+                        Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link href={"/contacts"}>
+                        Contact
+                    </Link>
+                </li>
+            </ul>
         </header>
     )
 }

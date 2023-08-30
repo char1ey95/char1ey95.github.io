@@ -8,7 +8,7 @@ span {
 
 /* header */
 
-.header_wrap {
+/* .header_wrap {
 	@apply text-gray-600 font-bold bg-white;
 }
 
@@ -82,4 +82,12 @@ span {
 
 .hamburger.active span:nth-of-type(3) {
 	@apply -translate-y-2.5 rotate-45;
+} */
+
+.menu_wrap > li > a {
+	@apply text-xl px-4 py-1 mx-2 rounded-md;
+}
+
+.menu_wrap > li > a:hover {
+	@apply text-xl px-4 py-1 bg-black text-white;
 }
