@@ -1,3 +1,4 @@
+import HeroBtn from "@/components/button/HeroBtn"
 import Separator from "@/components/line/separator"
 import Image from 'next/image'
 
@@ -14,9 +15,9 @@ export default function Hero() {
                         프론트엔드와 백엔드 모두에 관심이 많고, 항상 성실하게 배우고 있습니다.
                     </div>
                 </div>
-                <div className="flex  w-[30rem] justify-center items-center gap-16 hero_btn">
-                    <button>Projects</button>
-                    <button>Contact</button>
+                <div className="flex  w-[30rem] justify-center items-center gap-16">
+                    <HeroBtn>Projects</HeroBtn>
+                    <HeroBtn>Contact</HeroBtn>
                 </div>
             </div>
         </div>
