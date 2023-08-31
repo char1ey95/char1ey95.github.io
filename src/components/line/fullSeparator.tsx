@@ -1,7 +1,7 @@
 export default function FullSeparator() {
     return (
         <div className="flex py-2.5 px-0 flex-col items-start gap-2.5 self-stretch">
-            <span className="w-full h-[0.0625rem] bg-slate-900"></span>
+            <span className="w-full h-[0.0625rem] bg-slate-900 dark:bg-white"></span>
         </div>
     )
 }
