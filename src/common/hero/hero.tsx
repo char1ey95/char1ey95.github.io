@@ -1,3 +1,4 @@
+import Separator from "@/components/line/separator"
 import Image from 'next/image'
 
 export default function Hero() {
@@ -8,9 +9,7 @@ export default function Hero() {
                     <div className="flex py-[0.625rem] px-0 justify-center items-center gap-2.5 self-stretch hero_font">
                         신입 개발자 강찬수입니다
                     </div>
-                    <div className="flex py-[0.625rem] px-0 justify-center items-center gap-2.5 self-stretch flex-col">
-                        <span className=" w-64 h-[1px] bg-black"></span>
-                    </div>
+                    <Separator />
                     <div className="flex py-[0.625rem] px-[3.125rem] justify-center items-center gap-2.5 self-stretch hero_content_font">
                         프론트엔드와 백엔드 모두에 관심이 많고, 항상 성실하게 배우고 있습니다.
                     </div>
