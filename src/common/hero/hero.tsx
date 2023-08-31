@@ -1,3 +1,4 @@
+import LargeTextBox from "@/components/boxes/largeTextBox"
 import HeroBtn from "@/components/button/HeroBtn"
 import Separator from "@/components/line/separator"
 import Image from 'next/image'
@@ -11,9 +12,9 @@ export default function Hero() {
                         신입 개발자 강찬수입니다
                     </div>
                     <Separator />
-                    <div className="flex py-[0.625rem] px-[3.125rem] justify-center items-center gap-2.5 self-stretch hero_content_font">
+                    <LargeTextBox>
                         프론트엔드와 백엔드 모두에 관심이 많고, 항상 성실하게 배우고 있습니다.
-                    </div>
+                    </LargeTextBox>
                 </div>
                 <div className="flex  w-[30rem] justify-center items-center gap-16">
                     <HeroBtn>Projects</HeroBtn>
