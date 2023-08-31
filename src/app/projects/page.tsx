@@ -8,6 +8,9 @@ const Projects = () => {
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />
             </div>
+            <div className="flex w-[68.8125rem] flex-col justify-center items-center gap-[4.6875rem]">
+
+            </div>
         </div>
     )
 }
