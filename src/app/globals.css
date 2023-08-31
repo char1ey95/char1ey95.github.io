@@ -6,6 +6,13 @@ span {
 	@apply dark:text-white;
 }
 
+.basic {
+	@apply text-black;
+}
+
+.basicDark {
+	@apply text-white;
+}
 /* header */
 
 /* .header_wrap {
@@ -92,12 +99,6 @@ span {
 
 .menu_wrap > li > a:hover {
 	@apply text-xl px-4 py-1 bg-black text-white;
-}
-
-/* hero */
-
-.hero_font {
-	@apply text-center text-5xl font-normal leading-normal;
 }
 
 /* About */
