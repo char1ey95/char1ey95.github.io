@@ -1,3 +1,4 @@
+import ProjectCard from "@/common/project/project"
 import SubjectSeparator from "@/components/line/subjectSeparator"
 import MSubject from "@/components/subjects/mSubject"
 
@@ -9,7 +10,7 @@ const Projects = () => {
                 <SubjectSeparator />
             </div>
             <div className="flex w-[68.8125rem] flex-col justify-center items-center gap-[4.6875rem]">
-
+                <ProjectCard />
             </div>
         </div>
     )
