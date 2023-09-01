@@ -1,6 +1,8 @@
 import MTextBox from "@/components/boxes/mTextBox";
+import StackBox from "@/components/boxes/stackBox";
 import Cover from "@/components/images/cover";
 import FullSeparator from "@/components/line/fullSeparator";
+import StackList from "@/components/list/stackList";
 import SmSubject from "@/components/subjects/smSubject";
 
 export default function ProjectCard({ url }: { url: string }) {
@@ -17,6 +19,12 @@ export default function ProjectCard({ url }: { url: string }) {
                 회원가입, 카카오 로그인, 글쓰기, 실시간 채팅 등의 기능이 구현되어있습니다
                 회원가입, 카카오 로그인, 글쓰기, 실시간 채팅 등의 기능이 구현되어있습니다
             </MTextBox>
+            <StackList>
+                <StackBox name="html" />
+                <StackBox name="css" />
+                <StackBox name="javascript" />
+                <StackBox name="typescript" />
+            </StackList>
         </div>
     )
 }
