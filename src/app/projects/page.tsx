@@ -1,8 +1,22 @@
 import ProjectCard from "@/common/project/project"
 import SubjectSeparator from "@/components/line/subjectSeparator"
 import MSubject from "@/components/subjects/mSubject"
+import { DATABASE_ID, options } from "@/config";
 
-const Projects = () => {
+const Projects = async () => {
+
+    const getData = async () => {
+        const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options)
+        if (!res.ok) {
+            throw new Error('Failed to fetch data')
+        }
+        return res.json()
+    }
+
+    const response = await getData()
+
+    const projectItems = response.results
+
     return (
         <div className="flex py-6 px-40 flex-col items-center gap-6 self-stretch">
             <div className="flex flex-col items-center">
@@ -10,12 +24,11 @@ const Projects = () => {
                 <SubjectSeparator />
             </div>
             <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]">
-                <ProjectCard url="https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/uploads/%EC%B1%84%ED%8C%85.gif" />
-                <ProjectCard url="https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/uploads/%EC%B1%84%ED%8C%85.gif" />
-            </div>
-            <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]">
-                <ProjectCard url="https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/uploads/%EC%B1%84%ED%8C%85.gif" />
-                <ProjectCard url="https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/uploads/%EC%B1%84%ED%8C%85.gif" />
+                {
+                    projectItems.map((v: any, idx: number) => (
+                        <ProjectCard key={idx} data={v} />
+                    ))
+                }
             </div>
         </div>
     )

@@ -8,25 +8,38 @@ import SmSubject from "@/components/subjects/smSubject";
 import GithubSvg from "@/svg/github";
 import LinkSvg from "@/svg/link";
 
-export default function ProjectCard({ url }: { url: string }) {
+interface IStack {
+    name: string
+    color: string
+}
+
+export default function ProjectCard({ data }: { data: any }) {
+    const title = data.properties.name.title[0].plain_text
+    const description = data.properties.Description.rich_text[0].plain_text
+    const imgSrc = data.cover.file?.url || data.cover.external.url
+    const stacks: IStack[] = data.properties.tag.multi_select
+    const gitLink = data.properties.Github.url
+    const date = data.properties.WorkPeriod.date
+    // start, end
+
     return (
         <div className="flex flex-col items-start gap-2.5 flex-grow flex-shrink-0 basis-0 w-1/2">
-            <Cover url={url} />
+            <Cover url={imgSrc} />
             <SmSubject>
-                프로젝트 이름
+                {title}
             </SmSubject>
             <FullSeparator />
             <MTextBox>
-                회원가입, 카카오 로그인, 글쓰기, 실시간 채팅 등의 기능이 구현되어있습니다
-                회원가입, 카카오 로그인, 글쓰기, 실시간 채팅 등의 기능이 구현되어있습니다
-                회원가입, 카카오 로그인, 글쓰기, 실시간 채팅 등의 기능이 구현되어있습니다
-                회원가입, 카카오 로그인, 글쓰기, 실시간 채팅 등의 기능이 구현되어있습니다
+                {description}
             </MTextBox>
             <StackList>
-                <StackBox name="html" />
-                <StackBox name="css" />
-                <StackBox name="javascript" />
-                <StackBox name="typescript" />
+                {
+                    stacks.map((v, idx) => {
+                        return (
+                            <StackBox key={idx} name={v.name} color={v.color} />
+                        )
+                    })
+                }
             </StackList>
             <LinkBox>
                 <GithubSvg />
