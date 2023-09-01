@@ -20,6 +20,10 @@ export default function Home() {
         </LgTextBox>
         <div>대략 6개의 박스가 올 공간</div>
       </div>
+      <div className="">
+        <MSubject>Skill</MSubject>
+        <SubjectSeparator />
+      </div>
       <div className="flex py-6 px-40 flex-col items-center gap-6 self-stretch">
         <div className="flex flex-col items-center">
           <MSubject>Project</MSubject>

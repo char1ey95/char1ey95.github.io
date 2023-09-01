@@ -30,11 +30,6 @@ const Header = () => {
                         Projects
                     </Link>
                 </li>
-                <li>
-                    <Link href={"/contacts"}>
-                        Contact
-                    </Link>
-                </li>
             </ul>
         </header>
     )

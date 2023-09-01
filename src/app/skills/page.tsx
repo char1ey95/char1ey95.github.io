@@ -1,8 +1,12 @@
+import SubjectSeparator from "@/components/line/subjectSeparator"
+import MSubject from "@/components/subjects/mSubject"
+
 const Skills = () => {
     return (
-        <section className="hv-100">
-            Hello Skills
-        </section>
+        <div className="">
+            <MSubject>Skill</MSubject>
+            <SubjectSeparator />
+        </div>
     )
 }
 
