@@ -23,7 +23,8 @@ const Projects = async () => {
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />
             </div>
-            <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]">
+            {/* <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]"> */}
+            <div className="grid grid-cols-2 grid-rows-1">
                 {
                     projectItems.map((v: any, idx: number) => (
                         <ProjectCard key={idx} data={v} />

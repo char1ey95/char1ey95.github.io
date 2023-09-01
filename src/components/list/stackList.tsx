@@ -1,6 +1,6 @@
 export default function StackList({ children }: any) {
     return (
-        <div className="flex items-start self-stretch gap-9">
+        <div className="flex items-start self-stretch gap-2 flex-wrap">
             {children}
         </div>
     )

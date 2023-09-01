@@ -8,5 +8,12 @@ export const options = {
         'content-type': 'application/json',
         Authorization: `Bearer ${TOKEN}`
     },
-    body: JSON.stringify({ page_size: 100 })
+    body: JSON.stringify({
+        page_size: 100, sorts: [
+            {
+                "property": "WorkPeriod",
+                "direction": "descending"
+            }
+        ]
+    })
 };
