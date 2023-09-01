@@ -1,9 +1,12 @@
+import LinkBox from "@/components/boxes/linkBox";
 import MTextBox from "@/components/boxes/mTextBox";
 import StackBox from "@/components/boxes/stackBox";
 import Cover from "@/components/images/cover";
 import FullSeparator from "@/components/line/fullSeparator";
 import StackList from "@/components/list/stackList";
 import SmSubject from "@/components/subjects/smSubject";
+import GithubSvg from "@/svg/github";
+import LinkSvg from "@/svg/link";
 
 export default function ProjectCard({ url }: { url: string }) {
     return (
@@ -25,6 +28,10 @@ export default function ProjectCard({ url }: { url: string }) {
                 <StackBox name="javascript" />
                 <StackBox name="typescript" />
             </StackList>
+            <LinkBox>
+                <GithubSvg />
+                <LinkSvg />
+            </LinkBox>
         </div>
     )
 }
