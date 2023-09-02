@@ -23,7 +23,7 @@ export default function ProjectCard({ data }: { data: any }) {
     // start, end
 
     return (
-        <div className="flex flex-col items-start gap-2.5 flex-grow flex-shrink-0 basis-0 w-11/12">
+        <div className="flex flex-col items-start gap-2.5 flex-grow flex-shrink-0 basis-0 w-[32rem]">
             <Cover url={imgSrc} />
             <SmSubject>
                 {title}

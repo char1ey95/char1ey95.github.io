@@ -18,13 +18,13 @@ const Projects = async () => {
     const projectItems = response.results
 
     return (
-        <div className="flex py-6 px-40 flex-col items-center gap-6 self-stretch">
+        <div className="flex py-6 px-40 flex-col gap-6 self-stretch bg-slate-400">
             <div className="flex flex-col items-center">
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />
             </div>
             {/* <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]"> */}
-            <div className="grid grid-cols-2 grid-rows-1">
+            <div className="grid grid-cols-1 min-[1375px]:grid-cols-2 justify-between justify-items-center gap-4">
                 {
                     projectItems.map((v: any, idx: number) => (
                         <ProjectCard key={idx} data={v} />
