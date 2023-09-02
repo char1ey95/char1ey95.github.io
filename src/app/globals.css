@@ -41,35 +41,15 @@ span {
 
 .nav_md {
 	@apply md:w-auto md:h-auto md:visible md:ml-auto md:mr-auto;
-}
+}  */
 
 .hamburger,
 .hamburger span {
 	@apply inline-block transition-all duration-500 box-border;
 }
 
-.hamburger {
-	@apply relative w-8 h-6;
-}
-
-.hamburger_md {
-	@apply relative md:w-0 md:h-0 md:hidden;
-}
-
 .hamburger span {
 	@apply absolute left-0 w-full h-1 bg-slate-600 rounded;
-}
-
-.hamburger span:nth-of-type(1) {
-	@apply top-0;
-}
-
-.hamburger span:nth-of-type(2) {
-	@apply top-2.5;
-}
-
-.hamburger span:nth-of-type(3) {
-	@apply bottom-0;
 }
 
 .hamburger.active span:nth-of-type(1) {
@@ -89,7 +69,7 @@ span {
 
 .hamburger.active span:nth-of-type(3) {
 	@apply -translate-y-2.5 rotate-45;
-} */
+}
 
 /* header */
 

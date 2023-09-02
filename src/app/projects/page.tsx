@@ -18,7 +18,7 @@ const Projects = async () => {
     const projectItems = response.results
 
     return (
-        <div className="flex py-6 px-40 flex-col gap-6 self-stretch bg-slate-400">
+        <div className="flex py-6 px-40 flex-col gap-6 self-stretch bg-slate-400 mt-16">
             <div className="flex flex-col items-center">
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />

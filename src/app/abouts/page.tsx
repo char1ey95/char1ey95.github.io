@@ -4,7 +4,7 @@ import MSubject from "@/components/subjects/mSubject"
 
 const Abouts = () => {
     return (
-        <div>
+        <div className="mt-16">
             <MSubject>About</MSubject>
             <Separator />
             <LgTextBox>

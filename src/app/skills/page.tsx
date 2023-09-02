@@ -3,7 +3,7 @@ import MSubject from "@/components/subjects/mSubject"
 
 const Skills = () => {
     return (
-        <div className="">
+        <div className="mt-16">
             <MSubject>Skill</MSubject>
             <SubjectSeparator />
         </div>
