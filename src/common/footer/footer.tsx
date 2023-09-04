@@ -15,7 +15,7 @@ const Footer = () => {
                     <Link href='sms:01039968561' className="text-gray-400">
                         <TelSvg />
                     </Link>
-                    <Link href='mailto:ckstn510@naver.com' className="ml-3 text-gray-400">
+                    <Link href='mailto:ckstn410@gmail.com' className="ml-3 text-gray-400">
                         <MailSvg />
                     </Link>
                     <Link href={'https://char1ey.tistory.com/'} className="ml-3 text-gray-400">

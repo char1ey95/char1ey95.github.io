@@ -1,4 +1,5 @@
 import ProjectCard from "@/common/project/project"
+import SimpleDesc from "@/components/description/simpleDesc";
 import SubjectSeparator from "@/components/line/subjectSeparator"
 import MSubject from "@/components/subjects/mSubject"
 import { DATABASE_ID, options } from "@/config";
@@ -22,6 +23,7 @@ const Projects = async () => {
             <div className="flex flex-col items-center">
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />
+                <SimpleDesc>진행해왔던 프로젝트입니다</SimpleDesc>
             </div>
             {/* <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]"> */}
             <div className="grid grid-cols-1 min-[1375px]:grid-cols-2 justify-between justify-items-center gap-4">

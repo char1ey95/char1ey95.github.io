@@ -1,5 +1,6 @@
 import Hero from "@/common/hero/hero"
 import ProjectCard from "@/common/project/project"
+import Skill from "@/common/skill/skill"
 import LgTextBox from "@/components/boxes/lgTextBox"
 import Separator from "@/components/line/separator"
 import SubjectSeparator from "@/components/line/subjectSeparator"
@@ -34,10 +35,7 @@ export default async function Home() {
         </LgTextBox>
         <div>대략 6개의 박스가 올 공간</div>
       </div>
-      <div className="">
-        <MSubject>Skill</MSubject>
-        <SubjectSeparator />
-      </div>
+      <Skill />
       <div className="flex py-6 px-40 flex-col items-center gap-6 self-stretch">
         <div className="flex flex-col items-center">
           <MSubject>Project</MSubject>

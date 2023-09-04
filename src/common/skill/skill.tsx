@@ -20,13 +20,14 @@ import StackImageBox from "@/components/boxes/stackImageBox"
 import StackTextBox from "@/components/boxes/stackTextBox"
 import StackCard from "@/components/cards/stackCard"
 import StackSubject from "@/components/subjects/stackSubject"
-
+import SimpleDesc from "@/components/description/simpleDesc"
 
 export default function Skill() {
     return (
         <div className="mt-16">
             <MSubject>Skill</MSubject>
             <SubjectSeparator />
+            <SimpleDesc>사용할 수 있는 스택들과 간단한 설명입니다</SimpleDesc>
             <div className="px-40 py-6">
                 <div className="grid grid-cols-1 min-[1140px]:grid-cols-2 min-[1500px]:grid-cols-3 justify-items-center gap-y-10">
                     <StackCard>

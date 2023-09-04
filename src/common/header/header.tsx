@@ -4,15 +4,6 @@ import DarkModeBtn from "@/components/button/darkModeBtn"
 import HamburgerBtn from "@/components/button/hamburgerBtn"
 
 
-// .header {
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     left: 0;
-//     background-color: transparent;
-//     z-index: 10;
-// }
-
 const Header = () => {
     return (
         <header className="flex justify-between h-16 items-center fixed top-0 right-0 left-0 z-10 bg-slate-50 dark:bg-slate-900">
