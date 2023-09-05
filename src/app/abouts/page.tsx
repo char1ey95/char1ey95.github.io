@@ -5,7 +5,7 @@ import MSubject from "@/components/subjects/mSubject"
 
 const Abouts = () => {
     return (
-        <div className="mt-16">
+        <div className="mt-16 px-6 h-screen flex flex-col justify-center items-center">
             <MSubject>About</MSubject>
             <Separator />
             <About />
