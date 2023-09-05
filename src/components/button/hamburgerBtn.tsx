@@ -1,12 +1,12 @@
 'use client'
-import { useRef } from "react";
+import { MouseEvent, RefObject, useRef } from "react";
 
-const HamburgerBtn = () => {
+const HamburgerBtn = ({ menu }: { menu: RefObject<HTMLUListElement> }) => {
     const hamburger = useRef<HTMLDivElement>(null)
-    console.log(hamburger)
 
     const handleClick = () => {
         hamburger.current?.classList.toggle('active')
+        menu.current?.classList.toggle('onMenu')
     }
 
     return (

@@ -74,11 +74,25 @@ span {
 /* header */
 
 .menu_wrap > li > a {
-	@apply text-xl px-4 py-1 mx-2 rounded-md;
+	@apply text-lg px-4 py-1 mx-2 rounded-md;
 }
 
 .menu_wrap > li > a:hover {
-	@apply text-xl px-4 py-1 bg-black text-white;
+	@apply text-xl px-4 py-1 bg-black text-white dark:bg-slate-50 dark:text-slate-950;
 }
 
-/* About */
+.folded_menu {
+	@apply max-md:flex-col max-md:absolute max-md:w-full max-md:-top-52 max-md:items-center max-md:bg-slate-50 dark:max-md:bg-slate-900 max-md:py-2 max-md:px-4 max-md:-z-10;
+}
+
+.folded_menu li {
+	@apply max-md:w-full max-md:flex max-md:justify-center max-md:py-1;
+}
+
+.folded_menu li a {
+	@apply max-md:w-11/12 max-md:inline-block max-md:text-center;
+}
+
+.onMenu {
+	@apply max-md:block max-md:top-16 opacity-100 text-black max-md:-z-10 dark:text-slate-50;
+}
