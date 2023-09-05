@@ -3,6 +3,7 @@ import Hero from "@/common/hero/hero"
 import ProjectCard from "@/common/project/project"
 import Skill from "@/common/skill/skill"
 import LgTextBox from "@/components/boxes/lgTextBox"
+import SimpleDesc from "@/components/description/simpleDesc"
 import Separator from "@/components/line/separator"
 import SubjectSeparator from "@/components/line/subjectSeparator"
 import MSubject from "@/components/subjects/mSubject"
@@ -32,13 +33,13 @@ export default async function Home() {
         <About />
       </div>
       <Skill />
-      <div className="flex py-6 px-40 flex-col items-center gap-6 self-stretch">
+      <div className="flex py-6 px-20 flex-col gap-6 self-stretch mt-16 items-center">
         <div className="flex flex-col items-center">
           <MSubject>Project</MSubject>
           <SubjectSeparator />
+          <SimpleDesc>진행해왔던 프로젝트입니다</SimpleDesc>
         </div>
-        {/* <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]"> */}
-        <div className="grid grid-cols-2 grid-rows-1">
+        <div className="w-11/12 grid grid-cols-1 2xl:grid-cols-2 justify-between justify-items-center gap-4">
           {
             projectItems.map((v: any, idx: number) => (
               <ProjectCard key={idx} data={v} />

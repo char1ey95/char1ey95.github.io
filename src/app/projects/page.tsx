@@ -25,7 +25,6 @@ const Projects = async () => {
                 <SubjectSeparator />
                 <SimpleDesc>진행해왔던 프로젝트입니다</SimpleDesc>
             </div>
-            {/* <div className="flex w-[68.8125rem] justify-center items-center gap-[4.6875rem]"> */}
             <div className="w-11/12 grid grid-cols-1 2xl:grid-cols-2 justify-between justify-items-center gap-4">
                 {
                     projectItems.map((v: any, idx: number) => (

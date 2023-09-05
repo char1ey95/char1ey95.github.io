@@ -19,17 +19,18 @@ export default function ProjectCard({ data }: { data: any }) {
     const imgSrc = data.cover.file?.url || data.cover.external.url
     const stacks: IStack[] = data.properties.tag.multi_select
     const gitLink = data.properties.Github.url
-    const date = data.properties.WorkPeriod.date
+    const startDate = data.properties.WorkPeriod.date.start
+    const endDate = data.properties.WorkPeriod.date.end
     // start, end
 
     return (
-        <div className="flex flex-col items-start gap-2.5 flex-grow flex-shrink-0 basis-0 w-[40rem] bg-slate-200 dark:bg-slate-900 p-5 rounded-lg shadow-custom shadow-slate-50">
+        <div className="flex flex-col items-start gap-2.5 flex-grow flex-shrink-0 basis-0 w-[40rem] bg-slate-200 dark:bg-slate-800 p-5 rounded-lg shadow-custom shadow-slate-50 my-6">
             <Cover url={imgSrc} />
             <SmSubject>
                 {title}
             </SmSubject>
             <FullSeparator />
-            <MTextBox>
+            <MTextBox date={[startDate, endDate]}>
                 {description}
             </MTextBox>
             <StackList>
