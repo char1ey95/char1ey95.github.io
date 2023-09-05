@@ -7,9 +7,8 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <footer className="text-gray-600 font-bold bg-white md:bg-transparent">
-            <div className="container px-5 py-8 mx-auto flex items-center justify-between sm:flex-row">
-                <Logo />
+        <footer className="text-gray-600 font-bold bg-slate-50 dark:bg-slate-900">
+            <div className="container py-6 mx-auto flex items-center justify-between sm:flex-row">
                 <h1 className="min-[512px]:hidden">@Contact By</h1>
                 <span className="inline-flex sm:ml-auto mt-0 justify-between">
                     <Link href='sms:01039968561' className="text-gray-400">
