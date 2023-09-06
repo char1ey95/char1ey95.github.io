@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function Hero() {
     return (
-        <div className="flex w-full py-6 flex-col justify-center items-center gap-2.5 h-[30rem]">
+        <div className="flex w-full py-6 flex-col justify-center items-center gap-2.5 h-[40rem]">
             <div className="flex flex-col justify-center items-center gap-6 self-stretch">
                 <div className="flex flex-col justify-center items-center gap-6 self-stretch">
                     <LgSubject>

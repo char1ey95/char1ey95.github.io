@@ -6,6 +6,10 @@ span {
 	@apply dark:text-white;
 }
 
+li {
+	@apply list-disc;
+}
+
 .basic {
 	@apply text-black;
 }
