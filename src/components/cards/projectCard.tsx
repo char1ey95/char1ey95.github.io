@@ -1,10 +1,10 @@
 import LinkBox from "@/components/boxes/linkBox";
-import MTextBox from "@/components/boxes/mTextBox";
+import ProjectTextBox from "@/components/boxes/projectTextBox";
 import StackBox from "@/components/boxes/stackBox";
-import Cover from "@/components/images/cover";
+import ProjectThumbNail from "@/components/images/projectThumbNail";
 import FullSeparator from "@/components/line/fullSeparator";
 import StackList from "@/components/list/stackList";
-import SmSubject from "@/components/subjects/smSubject";
+import ProjectSubject from "@/components/subjects/projectSubject";
 import GithubSvg from "@/svg/github";
 import LinkSvg from "@/svg/link";
 
@@ -24,15 +24,11 @@ export default function ProjectCard({ data }: { data: any }) {
     // start, end
 
     return (
-        <div className="flex flex-col items-start gap-2.5 flex-grow flex-shrink-0 basis-0 w-[40rem] bg-slate-200 dark:bg-slate-800 p-5 rounded-lg custom_shadow shadow-slate-50 my-6">
-            <Cover url={imgSrc} />
-            <SmSubject>
-                {title}
-            </SmSubject>
+        <div className="mx-2 md:mx-4 py-4 px-2 md:px-6 max-w-[42rem] 2xl:flex 2xl:flex-col rounded-lg bg-blue-100 dark:bg-sky-900 drop-shadow-md">
+            <ProjectThumbNail url={imgSrc} />
+            <ProjectSubject title={title} />
             <FullSeparator />
-            <MTextBox date={[startDate, endDate]}>
-                {description}
-            </MTextBox>
+            <ProjectTextBox date={[startDate, endDate]} description={description} />
             <StackList>
                 {
                     stacks.map((v, idx) => {

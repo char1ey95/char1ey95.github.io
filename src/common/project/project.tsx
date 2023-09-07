@@ -20,13 +20,13 @@ const Project = async () => {
     const projectItems = response.results
 
     return (
-        <div className="flex py-6 px-20 flex-col gap-6 self-stretch mt-16 items-center">
-            <div className="flex flex-col items-center">
+        <div className="mt-16 mb-8">
+            <div className="">
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />
                 <SimpleDesc>진행해왔던 프로젝트입니다</SimpleDesc>
             </div>
-            <div className="w-11/12 grid grid-cols-1 2xl:grid-cols-2 justify-between justify-items-center gap-4">
+            <div className="grid grid-cols-1 2xl:grid-cols-2 gap-y-4 justify-items-center">
                 {
                     projectItems.map((v: any, idx: number) => (
                         <ProjectCard key={idx} data={v} />
