@@ -12,7 +12,7 @@ export default function About() {
         <div className="mt-16 xl:mt-0 xl:h-[60rem] flex flex-col justify-center items-center">
             <MSubject>About</MSubject>
             <Separator />
-            <div className="my-4 py-4 xl:py-8 flex flex-col xl:flex-row justify-center xl:justify-around items-center rounded-lg w-80 min-[480px]:w-96 sm:w-[30rem] md:w-[36rem] lg:w-[42rem] xl:w-[66rem] 2xl:w-[72rem] bg-gray-300">
+            <div className="my-4 py-4 xl:py-8 flex flex-col xl:flex-row justify-center xl:justify-around items-center rounded-lg w-80 min-[480px]:w-96 sm:w-[30rem] md:w-[36rem] lg:w-[42rem] xl:w-[66rem] 2xl:w-[72rem] bg-stone-200 dark:bg-stone-800">
                 <div className="mx-auto xl:mx-0 my-4 xl:my-0 w-64 sm:w-80 md:w-96 xl:w-1/4">
                     <Image src={photo} alt="" className="rounded-xl mx-auto" />
                 </div>

@@ -1,6 +1,6 @@
 export default function StackCard({ children }: { children: any }) {
     return (
-        <div className="flex flex-col w-11/12 h-48 rounded-lg bg-slate-100 dark:bg-slate-800 custom_shadow">
+        <div className="mx-4 md:px-4 flex flex-col md:flex-row justify-center md:justify-between items-center md:w-[45rem] rounded-lg bg-slate-100 dark:bg-slate-800 custom_shadow">
             {children}
         </div>
     )

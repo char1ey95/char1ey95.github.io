@@ -100,3 +100,7 @@ span {
 .custom_shadow {
 	@apply drop-shadow-xl dark:drop-shadow-2xl;
 }
+
+.skill_desc li {
+	@apply list-disc mt-2.5 last:mb-2.5;
+}
