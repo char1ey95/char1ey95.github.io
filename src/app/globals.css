@@ -6,10 +6,6 @@ span {
 	@apply dark:text-white;
 }
 
-li {
-	@apply list-disc;
-}
-
 .basic {
 	@apply text-black;
 }
@@ -99,4 +95,8 @@ li {
 
 .onMenu {
 	@apply max-md:block max-md:top-16 opacity-100 text-black max-md:-z-10 dark:text-slate-50;
+}
+
+.custom_shadow {
+	@apply drop-shadow-xl dark:drop-shadow-2xl;
 }

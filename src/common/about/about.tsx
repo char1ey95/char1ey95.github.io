@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function About() {
     return (
-        <div className="max-w-[75rem] max-sm:min-w-[380px] max-xl:w-3/4 max-xl:flex-col dark:bg-slate-800 bg-slate-100 flex justify-between my-4 mx-auto py-8 px-16 rounded-2xl shadow-custom shadow-slate-200 max-xl:items-center max-xl:px-4">
+        <div className="max-w-[75rem] max-sm:min-w-[380px] max-xl:w-3/4 max-xl:flex-col dark:bg-slate-800 bg-slate-100 flex justify-between my-4 mx-auto py-8 px-16 rounded-2xl custom_shadow shadow-slate-200 max-xl:items-center max-xl:px-4">
             <div className="sm:w-[22.5rem] w-64">
                 <Image src={photo} alt="" className="rounded-xl" />
             </div>
