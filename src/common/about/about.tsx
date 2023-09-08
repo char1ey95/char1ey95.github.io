@@ -1,6 +1,6 @@
 import Separator from "@/components/line/separator"
 import MSubject from "@/components/subjects/mSubject"
-import photo from "@/images/profile/profile.jpg"
+import photo from "/public/images/profile/profile.jpg"
 import GithubSvg from "@/svg/github"
 import MailSvg from "@/svg/mail"
 import TistorySvg from "@/svg/tistory"
@@ -8,13 +8,14 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function About() {
+
     return (
         <div className="mt-16 xl:mt-0 xl:h-[60rem] flex flex-col justify-center items-center">
             <MSubject>About</MSubject>
             <Separator />
             <div className="mx-4 my-4 px-8 py-4 xl:py-8 flex flex-col xl:flex-row justify-center xl:justify-around items-center rounded-lg md:w-[45rem] lg:w-[42rem] xl:w-[66rem] 2xl:w-[72rem] bg-stone-200 dark:bg-stone-800">
                 <div className="mx-auto xl:mx-0 my-4 xl:my-0 w-64 sm:w-80 md:w-96 xl:w-1/4">
-                    <Image src={photo} alt="" className="rounded-xl mx-auto" />
+                    <Image src={photo} alt="" className="rounded-xl mx-auto" width={500} height={500} />
                 </div>
                 <div className="flex flex-col lg:w-[30rem] xl:w-3/5">
                     <h1 className="my-2 md:my-4 text-4xl text-center font-bold">강찬수</h1>
