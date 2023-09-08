@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/",
+    basePath: "/char1ey.github.io",
 }
 
 module.exports = nextConfig
