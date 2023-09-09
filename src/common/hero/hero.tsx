@@ -20,7 +20,7 @@ export default function Hero() {
                 <div className="flex w-[30rem] justify-center items-center gap-16 max-md:w-[20rem]">
                     <Link
                         href={"#abouts"}
-                        className="mt-16 py-4 px-8 rounded-[10rem] bg-gradient-to-r from-[#5F8D4E] to-[#eea849] dark:from-[#285430] dark:to-[#2C3333] dark:bg-[#1A120B] animate-bounce font-extrabold shadow-lg text-slate-100 dark:text-slate-100">
+                        className="mt-16 py-4 px-8 rounded-[10rem] bg-gradient-to-r from-[#5F8D4E] to-[#eea849] hover:from-[#75ad60] hover:to-[#ffb54f] dark:from-[#285430] dark:to-[#2C3333] hover:dark:from-[#387644] hover:dark:to-[#4c5858] animate-bounce font-extrabold shadow-lg text-slate-100 dark:text-slate-100">
                         프로젝트 바로가기
                     </Link>
                 </div>
