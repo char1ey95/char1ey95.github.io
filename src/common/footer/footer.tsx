@@ -7,7 +7,7 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <footer className="text-gray-600 font-bold bg-slate-50 dark:bg-slate-900">
+        <footer className="text-gray-600 font-bold bg-[#F0F0F0] dark:bg-[#2C3333]">
             <div className="container py-6 mx-auto flex items-center justify-between sm:flex-row">
                 <h1 className="min-[512px]:hidden">@Contact By</h1>
                 <span className="inline-flex sm:ml-auto mt-0 justify-between">

@@ -30,19 +30,40 @@ export default function About() {
                         매일매일 새로운 지식을 배우며 무언가를 만들고 성장하는 저를 보며 항상 뿌듯했습니다. 하지만 아직 더 많은 배움과 경험을 통해 더 많이 성장하고 싶습니다. 항상 멈추지 않고 나아가는 개발자가 되겠습니다.
                     </div>
                     <div className="mt-4 mb-2 text-sm md:text-base lg:text-lg">
-                        <Link href='mailto:ckstn410@gmail.com' className="text-gray-400 flex hover:text-gray-300">
+                        <Link href='mailto:ckstn410@gmail.com' className="
+                        flex
+                        font-semibold
+                        text-gray-600
+                        hover:text-gray-800
+                        dark:text-gray-400
+                        dark:hover:text-gray-300"
+                        >
                             <MailSvg />
                             <div className="ml-3">
                                 ckstn410@gmail.com
                             </div>
                         </Link>
-                        <Link href='https://char1ey.tistory.com/' className="text-gray-400 flex hover:text-gray-300">
+                        <Link href='https://char1ey.tistory.com/' className="
+                        flex
+                        font-semibold
+                        text-gray-600
+                        hover:text-gray-800
+                        dark:text-gray-400
+                        dark:hover:text-gray-300"
+                        >
                             <TistorySvg />
                             <div className="ml-3">
                                 https://char1ey.tistory.com/
                             </div>
                         </Link>
-                        <Link href='https://github.com/char1ey95' className="text-gray-400 flex hover:text-gray-300">
+                        <Link href='https://github.com/char1ey95' className="
+                        flex
+                        font-semibold
+                        text-gray-600
+                        hover:text-gray-800
+                        dark:text-gray-400
+                        dark:hover:text-gray-300"
+                        >
                             <GithubSvg />
                             <div className="ml-3">
                                 https://github.com/char1ey95

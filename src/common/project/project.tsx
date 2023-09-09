@@ -20,7 +20,7 @@ const Project = async () => {
     const projectItems = response.results
 
     return (
-        <div id="projects" className="py-16 bg-[#F0E5CF] dark:bg-zinc-700">
+        <div id="projects" className="py-16 bg-[#F3FDE8] dark:bg-zinc-700">
             <div className="">
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />

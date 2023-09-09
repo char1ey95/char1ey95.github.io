@@ -1,7 +1,7 @@
 'use client'
 import { useTheme } from "next-themes"
 
-const DarkModeBtn = () => {
+const MdDarkModeBtn = () => {
     const { theme, setTheme } = useTheme()
 
     const handleTheme = () => {
@@ -10,8 +10,6 @@ const DarkModeBtn = () => {
 
     return (
         <button onClick={handleTheme} className="
-        inline-flex
-        items-center
         border-0
         py-1
         px-3
@@ -19,7 +17,7 @@ const DarkModeBtn = () => {
         rounded
         text-base
         mt-0
-        max-md:hidden
+        md:hidden
         bg-stone-300
         hover:bg-gray-50
         hover:text-orange-500
@@ -38,4 +36,4 @@ const DarkModeBtn = () => {
     )
 }
 
-export default DarkModeBtn
+export default MdDarkModeBtn

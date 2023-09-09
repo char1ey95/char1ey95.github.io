@@ -4,6 +4,7 @@ import Link from "next/link"
 import DarkModeBtn from "@/components/button/darkModeBtn"
 import HamburgerBtn from "@/components/button/hamburgerBtn"
 import { MouseEvent, useRef } from "react"
+import MdDarkModeBtn from "@/components/button/MdDarkModeBtn"
 
 
 const Header = () => {
@@ -14,11 +15,14 @@ const Header = () => {
     }
 
     return (
-        <header className="flex justify-between h-16 items-center fixed top-0 right-0 left-0 z-10 bg-[#FAF8F1] dark:bg-slate-900" >
+        <header className="flex justify-between h-16 items-center fixed top-0 right-0 left-0 z-10 bg-[#F0F0F0] dark:bg-[#2C3333]" >
             <div className="px-4 py-1">
                 <Logo />
             </div>
-            <ul className="flex justify-between font-bold menu_wrap folded_menu transition-all" ref={menu}>
+            <ul className="flex justify-between font-bold menu_wrap folded_menu transition-all relative" ref={menu}>
+                <div className="flex justify-end absolute top-3.5 right-5">
+                    <MdDarkModeBtn />
+                </div>
                 <li>
                     <Link href={"/"} onClick={clickHandler}>
                         Home

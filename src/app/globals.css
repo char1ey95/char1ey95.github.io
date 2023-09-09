@@ -63,7 +63,7 @@ span {
 }
 
 .folded_menu {
-	@apply max-md:flex-col max-md:absolute max-md:w-full max-md:-top-52 max-md:items-center max-md:bg-slate-50 dark:max-md:bg-slate-900 max-md:py-2 max-md:px-4 max-md:-z-10;
+	@apply max-md:flex-col max-md:absolute max-md:w-full max-md:-top-56 max-md:items-center max-md:bg-[#F0F0F0] dark:max-md:bg-[#2C3333] max-md:py-2 max-md:px-4 max-md:-z-10;
 }
 
 .folded_menu li {
@@ -71,7 +71,7 @@ span {
 }
 
 .folded_menu li a {
-	@apply max-md:w-11/12 max-md:inline-block max-md:text-center;
+	@apply max-md:w-9/12 max-md:inline-block max-md:text-center border-gray-400;
 }
 
 .onMenu {
