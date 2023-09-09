@@ -8,8 +8,8 @@ import Link from "next/link"
 const Footer = () => {
     return (
         <footer className="text-gray-600 font-bold bg-[#F0F0F0] dark:bg-[#2C3333]">
-            <div className="container py-6 mx-auto flex items-center justify-between sm:flex-row">
-                <h1 className="min-[512px]:hidden">@Contact By</h1>
+            <div className="container py-6 px-4 mx-auto flex items-center justify-between sm:flex-row">
+                <h1 className="min-[512px]:hidden">@ 2023 Char1ey</h1>
                 <span className="inline-flex sm:ml-auto mt-0 justify-between">
                     <Link href='sms:01039968561' className="text-gray-400">
                         <TelSvg />

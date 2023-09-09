@@ -73,7 +73,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <Image src={react} alt="" width={100} />
+                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-1">
+                                <Image src={react} alt="" width={100} />
+                            </div>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>React</StackSubject>
@@ -90,7 +92,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <Image src={nodejs} alt="" width={100} />
+                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-1">
+                                <Image src={nodejs} alt="" width={100} />
+                            </div>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>NodeJS</StackSubject>
@@ -106,7 +110,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <Image src={mysql} alt="" width={100} className="rounded" />
+                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-1">
+                                <Image src={mysql} alt="" width={100} className="rounded-full" />
+                            </div>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>MySQL</StackSubject>
@@ -121,7 +127,7 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <Image src={github} alt="" width={100} />
+                            <Image src={github} alt="" width={100} className="rounded-xl" />
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>Git & Github</StackSubject>
@@ -138,7 +144,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <Image src={linux} alt="" width={100} />
+                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-4">
+                                <Image src={linux} alt="" width={100} />
+                            </div>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>Linux</StackSubject>
