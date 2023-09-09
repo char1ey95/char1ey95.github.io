@@ -20,7 +20,7 @@ const Project = async () => {
     const projectItems = response.results
 
     return (
-        <div className="mt-16 mb-8">
+        <div id="projects" className="mt-16 mb-8">
             <div className="">
                 <MSubject>Project</MSubject>
                 <SubjectSeparator />

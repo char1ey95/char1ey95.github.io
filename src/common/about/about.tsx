@@ -10,7 +10,7 @@ import Link from "next/link"
 export default function About() {
 
     return (
-        <div className="mt-16 xl:mt-0 xl:h-[60rem] flex flex-col justify-center items-center">
+        <div id="about" className="mt-16 xl:mt-0 xl:h-[60rem] flex flex-col justify-center items-center">
             <MSubject>About</MSubject>
             <Separator />
             <div className="mx-4 my-4 px-8 py-4 xl:py-8 flex flex-col xl:flex-row justify-center xl:justify-around items-center rounded-lg md:w-[45rem] lg:w-[42rem] xl:w-[66rem] 2xl:w-[72rem] bg-stone-200 dark:bg-stone-800">
