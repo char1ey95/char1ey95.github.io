@@ -10,7 +10,9 @@ const nextConfig = {
             'localhost',
             'char1ey.github.io',
             'www.notion.so',
-            'https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/'],
+            'https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/',
+            'prod-files-secure.s3.us-west-2.amazonaws.com',
+            'user-images.githubusercontent.com'],
     },
 }
 
