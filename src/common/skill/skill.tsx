@@ -27,7 +27,7 @@ import StackWrap from "@/components/boxes/stackWrap"
 
 export default function Skill() {
     return (
-        <div id="skills" className="mt-16 mb-8">
+        <div id="skills" className="py-16 bg-[#BDD2B6] dark:bg-[#798777]">
             <MSubject>Skill</MSubject>
             <SubjectSeparator />
             <SimpleDesc>사용할 수 있는 스택들과 간단한 설명입니다</SimpleDesc>
@@ -106,7 +106,7 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <Image src={mysql} alt="" width={100} className="rounded-[50%]" />
+                            <Image src={mysql} alt="" width={100} className="rounded" />
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>MySQL</StackSubject>

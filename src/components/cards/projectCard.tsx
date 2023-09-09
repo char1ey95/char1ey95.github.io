@@ -24,7 +24,7 @@ export default function ProjectCard({ data }: { data: any }) {
     // start, end
 
     return (
-        <div className="mx-2 md:mx-4 py-4 px-2 md:px-6 max-w-[42rem] 2xl:flex 2xl:flex-col rounded-lg bg-blue-100 dark:bg-sky-900 drop-shadow-md">
+        <div className="mx-2 md:mx-4 py-4 px-2 md:px-6 max-w-[42rem] 2xl:flex 2xl:flex-col rounded-lg bg-[#93B1A6] dark:bg-[#1B262C] drop-shadow-md">
             <ProjectThumbNail url={imgSrc} />
             <ProjectSubject title={title} />
             <FullSeparator />
