@@ -28,6 +28,13 @@ module.exports = {
           800: '#846358',
           900: '#43302b',
         },
+      },
+      keyframes: {
+        'color-wave': {
+          '0%': { color: "#F0F0F0" },
+          '50%': { color: "#C1C3B4" },
+          '100%': { color: "#F0F0F0" }
+        },
       }
     },
   },
