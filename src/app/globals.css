@@ -78,7 +78,7 @@ span {
 }
 
 .menu_wrap > li > a:hover {
-	@apply text-xl px-4 py-1 bg-black text-white dark:bg-slate-50 dark:text-slate-950;
+	@apply text-lg px-4 py-1 bg-black text-white dark:bg-slate-50 dark:text-slate-950;
 }
 
 .folded_menu {

@@ -14,11 +14,11 @@ const Header = () => {
     }
 
     return (
-        <header className="flex justify-between h-16 items-center fixed top-0 right-0 left-0 z-10 bg-slate-50 dark:bg-slate-900" >
+        <header className="flex justify-between h-16 items-center fixed top-0 right-0 left-0 z-10 bg-slate-200 dark:bg-slate-900" >
             <div className="px-4 py-1">
                 <Logo />
             </div>
-            <ul className="flex justify-between menu_wrap folded_menu transition-all" ref={menu}>
+            <ul className="flex justify-between font-bold menu_wrap folded_menu transition-all" ref={menu}>
                 <li>
                     <Link href={"/"} onClick={clickHandler}>
                         Home
