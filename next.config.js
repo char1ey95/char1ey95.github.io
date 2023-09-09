@@ -12,7 +12,8 @@ const nextConfig = {
             'www.notion.so',
             'https://nftin-wallet-bucket.s3.ap-northeast-2.amazonaws.com/',
             'prod-files-secure.s3.us-west-2.amazonaws.com',
-            'user-images.githubusercontent.com'],
+            'user-images.githubusercontent.com',
+            'github.com'],
     },
 }
 
