@@ -74,7 +74,9 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Confirm Current Directory
-        run: echo $PWD
+        run: | 
+          echo $PWD
+          ls
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Create environment variables file
