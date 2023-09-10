@@ -9,9 +9,11 @@ import ProjectSubject from "@/components/subjects/projectSubject";
 import GithubSvg from "@/svg/github";
 import LinkSvg from "@/svg/link";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import ProjectModal from "../modal/projectModal";
 
 export default function ProjectCard({ data }: { data: IResult }) {
+    const [isOpen, setIsOpen] = useState(false)
     const containerRef = useRef<HTMLDivElement>(null);
 
     const title = data.properties.name.title[0].plain_text
@@ -26,9 +28,6 @@ export default function ProjectCard({ data }: { data: IResult }) {
     const database = data.properties.database.multi_select
     const githubLink = data.properties.github.url
     const openLink = data.properties.url.url
-
-    console.log(language)
-
 
     useEffect(() => {
         let observer = new IntersectionObserver((e) => {
@@ -50,7 +49,10 @@ export default function ProjectCard({ data }: { data: IResult }) {
             <ProjectThumbNail url={imgSrc} />
             <ProjectSubject title={title} />
             <FullSeparator />
-            <ProjectTextBox date={[startDate, endDate]} description={description} />
+            <ProjectTextBox date={[startDate, endDate]} description={description} setIsOpen={setIsOpen} />
+            {
+                isOpen ? <ProjectModal data={data} setIsOpen={setIsOpen} /> : <></>
+            }
             <StackList>
                 {
                     stacks.map((v: IMultiSelect, idx: number) => {
