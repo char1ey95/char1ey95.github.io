@@ -8,10 +8,12 @@ import MdDarkModeBtn from "@/components/button/MdDarkModeBtn"
 
 
 const Header = () => {
+    const hamburger = useRef<HTMLDivElement>(null)
     const menu = useRef<HTMLUListElement>(null)
 
     const clickHandler = (e: MouseEvent) => {
         menu.current?.classList.contains('onMenu') ? menu.current.classList.remove('onMenu') : ''
+        hamburger.current?.classList.contains('active') ? hamburger.current.classList.remove('active') : ''
     }
 
     return (
@@ -45,7 +47,7 @@ const Header = () => {
                 </li>
             </ul>
             <div className="flex justify-center items-center mr-4">
-                <HamburgerBtn menu={menu} />
+                <HamburgerBtn menu={menu} hamburger={hamburger} />
                 <DarkModeBtn />
             </div>
         </header>

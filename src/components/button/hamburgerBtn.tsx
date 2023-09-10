@@ -1,8 +1,7 @@
 'use client'
 import { MouseEvent, RefObject, useRef } from "react";
 
-const HamburgerBtn = ({ menu }: { menu: RefObject<HTMLUListElement> }) => {
-    const hamburger = useRef<HTMLDivElement>(null)
+const HamburgerBtn = ({ menu, hamburger }: { menu: RefObject<HTMLUListElement>, hamburger: RefObject<HTMLDivElement> }) => {
 
     const handleClick = () => {
         hamburger.current?.classList.toggle('active')
