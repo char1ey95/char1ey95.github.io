@@ -10,22 +10,22 @@ import GithubSvg from "@/svg/github";
 import LinkSvg from "@/svg/link";
 import { useEffect, useRef } from "react";
 
-interface IStack {
-    name: string
-    color: string
-}
-
-export default function ProjectCard({ data }: { data: any }) {
+export default function ProjectCard({ data }: { data: IResult }) {
     const containerRef = useRef<HTMLDivElement>(null);
 
     const title = data.properties.name.title[0].plain_text
-    const description = data.properties.Description.rich_text[0].plain_text
+    const description = data.properties.description.rich_text[0].plain_text
     const imgSrc = data.cover.file?.url || data.cover.external.url
-    const stacks: IStack[] = data.properties.tag.multi_select
-    const gitLink = data.properties.Github.url
-    const startDate = data.properties.WorkPeriod.date.start
-    const endDate = data.properties.WorkPeriod.date.end
-    // start, end
+    const stacks = data.properties.tag.multi_select
+    const language = data.properties.language.multi_select
+    const contribute = data.properties.contribute.multi_select
+    const deploy = data.properties.deploy.multi_select
+    const database = data.properties.database.multi_select
+    const gitLink = data.properties.github.url
+    const startDate = data.properties.workPeriod.date.start
+    const endDate = data.properties.workPeriod.date.end
+
+    console.log(language)
 
 
     useEffect(() => {
@@ -51,7 +51,7 @@ export default function ProjectCard({ data }: { data: any }) {
             <ProjectTextBox date={[startDate, endDate]} description={description} />
             <StackList>
                 {
-                    stacks.map((v, idx) => {
+                    stacks.map((v: IMultiSelect, idx: number) => {
                         return (
                             <StackBox key={idx} name={v.name} color={v.color} />
                         )

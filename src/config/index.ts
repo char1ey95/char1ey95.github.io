@@ -11,7 +11,7 @@ export const options = {
     body: JSON.stringify({
         page_size: 100, sorts: [
             {
-                "property": "WorkPeriod",
+                "property": "workPeriod",
                 "direction": "descending"
             }
         ]

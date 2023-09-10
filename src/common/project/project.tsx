@@ -10,12 +10,13 @@ const Project = async () => {
     const getData = async () => {
         const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options)
         if (!res.ok) {
+            // IErrorResponse
             throw new Error('Failed to fetch data')
         }
         return res.json()
     }
 
-    const response = await getData()
+    const response: INotionAPI = await getData()
 
     const projectItems = response.results
 
@@ -28,7 +29,7 @@ const Project = async () => {
             </div>
             <div className="grid grid-cols-1 2xl:grid-cols-2 gap-y-4 justify-items-center">
                 {
-                    projectItems.map((v: any, idx: number) => (
+                    projectItems.map((v: IResult, idx: number) => (
                         <ProjectCard key={idx} data={v} />
                     ))
                 }
