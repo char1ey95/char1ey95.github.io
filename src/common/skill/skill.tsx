@@ -24,8 +24,10 @@ import StackSubject from "@/components/subjects/stackSubject"
 import SimpleDesc from "@/components/description/simpleDesc"
 import StackImagesBox from "@/components/boxes/stackImagesBox"
 import StackWrap from "@/components/boxes/stackWrap"
+import { useEffect, useRef } from "react"
 
 export default function Skill() {
+
     return (
         <div id="skills" className="py-16 bg-[#BDD2B6] dark:bg-[#798777]">
             <MSubject>Skill</MSubject>

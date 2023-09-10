@@ -77,3 +77,11 @@ span {
 .onMenu {
 	@apply max-md:block max-md:top-16 opacity-100 text-black max-md:-z-10 dark:text-slate-50;
 }
+
+/* .observer_none {
+	@apply opacity-100 translate-x-0;
+} */
+
+.observer {
+	@apply opacity-50 translate-x-16 2xl:translate-y-12 2xl:translate-x-0;
+}
