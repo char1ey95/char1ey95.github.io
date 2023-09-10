@@ -1,5 +1,3 @@
-'use client'
-
 export default function StackBox({ name, color }: { name: string, color: string }) {
 
     return (

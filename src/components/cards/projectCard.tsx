@@ -8,22 +8,24 @@ import StackList from "@/components/list/stackList";
 import ProjectSubject from "@/components/subjects/projectSubject";
 import GithubSvg from "@/svg/github";
 import LinkSvg from "@/svg/link";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export default function ProjectCard({ data }: { data: IResult }) {
     const containerRef = useRef<HTMLDivElement>(null);
 
     const title = data.properties.name.title[0].plain_text
-    const description = data.properties.description.rich_text[0].plain_text
     const imgSrc = data.cover.file?.url || data.cover.external.url
+    const description = data.properties.description.rich_text[0].plain_text
+    const startDate = data.properties.workPeriod.date.start
+    const endDate = data.properties.workPeriod.date.end
     const stacks = data.properties.tag.multi_select
     const language = data.properties.language.multi_select
     const contribute = data.properties.contribute.multi_select
     const deploy = data.properties.deploy.multi_select
     const database = data.properties.database.multi_select
-    const gitLink = data.properties.github.url
-    const startDate = data.properties.workPeriod.date.start
-    const endDate = data.properties.workPeriod.date.end
+    const githubLink = data.properties.github.url
+    const openLink = data.properties.url.url
 
     console.log(language)
 
@@ -59,8 +61,17 @@ export default function ProjectCard({ data }: { data: IResult }) {
                 }
             </StackList>
             <LinkBox>
-                <GithubSvg />
-                <LinkSvg />
+                <Link href={githubLink} className="hover:animate-ping">
+                    <GithubSvg />
+                </Link>
+                {
+                    openLink === "none" ?
+                        <></>
+                        :
+                        <Link href={openLink === "none" ? "" : openLink} className="hover:animate-ping">
+                            <LinkSvg />
+                        </Link>
+                }
             </LinkBox>
         </div>
     )
