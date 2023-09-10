@@ -5,12 +5,13 @@ import Skill from "@/common/skill/skill"
 
 export default async function Home() {
 
+
   return (
     <div className="mt-16 relative">
       <Hero />
       <About />
-      <Skill />
       <Project />
+      <Skill />
     </div>
   )
 }

@@ -35,9 +35,11 @@ export default function ProjectCard({ data }: { data: IResult }) {
                 if (v.isIntersecting) {
                     v.target.classList.add('observer_none')
                     v.target.classList.remove('observer')
+                    setIsOpen(false)
                 } else {
                     v.target.classList.add('observer')
                     v.target.classList.remove('observer_none')
+                    setIsOpen(false)
                 }
             });
         });

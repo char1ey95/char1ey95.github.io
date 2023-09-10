@@ -107,3 +107,39 @@ span {
 .observer {
 	@apply opacity-50 translate-y-16 2xl:translate-y-0 2xl:translate-x-16;
 }
+
+.red {
+	@apply bg-red-200 dark:bg-red-500;
+}
+
+.blue {
+	@apply bg-blue-200 dark:bg-blue-500;
+}
+
+.green {
+	@apply bg-green-200 dark:bg-green-500;
+}
+
+.yellow {
+	@apply bg-yellow-200 dark:bg-yellow-500;
+}
+
+.purple {
+	@apply bg-purple-200 dark:bg-purple-500;
+}
+
+.pink {
+	@apply bg-pink-200 dark:bg-pink-500;
+}
+
+.brown {
+	@apply bg-brown-200 dark:bg-brown-500;
+}
+
+.orange {
+	@apply bg-orange-200 dark:bg-orange-500;
+}
+
+.gray {
+	@apply bg-gray-200 dark:bg-gray-500;
+}
