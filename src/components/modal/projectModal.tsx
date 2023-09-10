@@ -126,7 +126,7 @@ export default function ProjectModal({ data, setIsOpen }: {
                         {
                             contribute.map((v, idx) => {
                                 return (
-                                    <li className="mt-2 text-sm list-disc mx-6 md:mx-0">
+                                    <li key={idx} className="mt-2 text-sm list-disc mx-6 md:mx-0">
                                         {v.name}
                                     </li>
                                 )

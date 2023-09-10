@@ -6,7 +6,7 @@ export default function StackBox({ name, color }: { name: string, color: string 
 
     useEffect(() => {
         ref.current?.classList.add(color)
-    }, [])
+    }, [color])
 
     return (
         <div ref={ref} className="mr-2 mt-2 py-1 px-3 text-sm min-[480px]:text-sm font-semibold text-center rounded-md">
