@@ -108,7 +108,7 @@ export default function ProjectModal({ data, setIsOpen }: {
                 <div className="flex items-center pb-2">
                     <ModalSubject subject="Github" />
                     <Link href={githubLink} className="flex">
-                        <StackBox name={githubLink} color={githubLink} />
+                        <StackBox name={githubLink} color={"white"} />
                     </Link>
                 </div>
                 {
@@ -116,7 +116,7 @@ export default function ProjectModal({ data, setIsOpen }: {
                         <div className="flex items-center pb-2">
                             <ModalSubject subject="링크" />
                             <Link href={openLink} className="flex">
-                                <StackBox name={openLink} color={openLink} />
+                                <StackBox name={openLink} color={"white"} />
                             </Link>
                         </div>
                 }
