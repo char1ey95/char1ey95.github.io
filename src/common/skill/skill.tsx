@@ -1,6 +1,5 @@
 import SubjectSeparator from "@/components/line/subjectSeparator"
 import MSubject from "@/components/subjects/mSubject"
-import front from "/public/images/stacks/front.png"
 import javascript from "/public/images/stacks/javascript.png"
 import typescript from "/public/images/stacks/typescript.png"
 import react from "/public/images/stacks/react.png"
@@ -9,22 +8,24 @@ import nest from "/public/images/stacks/nest.png"
 import nodejs from "/public/images/stacks/nodejs.png"
 import socketio from "/public/images/stacks/socketio.png"
 import mysql from "/public/images/db/mysql.png"
-import mongodb from "/public/images/db/mongodb.png"
 import aws from "/public/images/deploy/aws.png"
 import github_action from "/public/images/deploy/github_action.png"
-import figma from "/public/images/tools/figma.png"
 import github from "/public/images/tools/github.png"
+import jwt from "/public/images/stacks/jwt.png"
+import reactQuery from "/public/images/stacks/react_query.png"
+import recoil from "/public/images/stacks/recoil.png"
+import redux from "/public/images/stacks/redux.png"
 import trello from "/public/images/tools/trello.png"
+import figma from "/public/images/stacks/figma.png"
+import notion from "/public/images/tools/notion.png"
 import Image from "next/image"
-import FullSeparator from "@/components/line/fullSeparator"
 import StackImageBox from "@/components/boxes/stackImageBox"
 import StackTextBox from "@/components/boxes/stackTextBox"
 import StackCard from "@/components/cards/stackCard"
 import StackSubject from "@/components/subjects/stackSubject"
 import SimpleDesc from "@/components/description/simpleDesc"
-import StackImagesBox from "@/components/boxes/stackImagesBox"
 import StackWrap from "@/components/boxes/stackWrap"
-import { useEffect, useRef } from "react"
+import StackImageWrap from "@/components/images/stackImageWrap"
 
 export default function Skill() {
 
@@ -75,9 +76,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-1">
+                            <StackImageWrap>
                                 <Image src={react} alt="" width={100} />
-                            </div>
+                            </StackImageWrap>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>React</StackSubject>
@@ -94,9 +95,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-1">
+                            <StackImageWrap>
                                 <Image src={nodejs} alt="" width={100} />
-                            </div>
+                            </StackImageWrap>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>NodeJS</StackSubject>
@@ -112,9 +113,9 @@ export default function Skill() {
 
                     <StackCard>
                         <StackImageBox>
-                            <div className="flex justify-center items-center bg-[#ffffff] rounded-full w-20 h-20 p-1">
+                            <StackImageWrap>
                                 <Image src={mysql} alt="" width={100} className="rounded-full" />
-                            </div>
+                            </StackImageWrap>
                         </StackImageBox>
                         <StackWrap>
                             <StackSubject>MySQL</StackSubject>
@@ -157,6 +158,104 @@ export default function Skill() {
                                     <li>Git이나 AWS EC2 서버를 이용하기 위해 사용합니다.</li>
                                     <li>터미널에서 명령어를 통해 간단한 파일 조작을 할 수 있습니다.</li>
                                     <li>AWS EC2에 Ubuntu 환경에 서버를 배포하고 구축한 적이 있습니다.</li>
+                                </ul>
+                            </StackTextBox>
+                        </StackWrap>
+                    </StackCard>
+                </div>
+            </div>
+            <div className="mt-8 px-6">
+                <SimpleDesc>사용은 가능하지만 학습이 조금 더 필요한 스택들입니다.</SimpleDesc>
+            </div>
+            <div className="mx-auto my-0 2xl:w-[94.5rem]">
+                <div className="grid grid-cols-1 2xl:grid-cols-2 md:justify-items-center gap-y-8">
+                    <StackCard>
+                        <StackImageBox>
+                            <StackImageWrap>
+                                <Image src={nest} alt="" className="" />
+                            </StackImageWrap>
+                        </StackImageBox>
+                        <StackWrap>
+                            <StackSubject>NestJS</StackSubject>
+                            <StackTextBox>
+                                <ul className="skill_desc">
+                                    <li>
+                                        요청과 응답의 생명주기를 숙지하고 사용한 경험이 있습니다.
+                                    </li>
+                                </ul>
+                            </StackTextBox>
+                        </StackWrap>
+                    </StackCard>
+                    <StackCard>
+                        <StackImageBox>
+                            <StackImageWrap>
+                                <Image src={jwt} alt="" className="" />
+                            </StackImageWrap>
+                        </StackImageBox>
+                        <StackWrap>
+                            <StackSubject>JsonWebToken</StackSubject>
+                            <StackTextBox>
+                                <ul className="skill_desc">
+                                    <li>
+                                        JWT를 직접 구현하며 원리를 학습하였습니다.
+                                    </li>
+                                    <li>
+                                        JWT를 이용해 회원가입, 로그인을 구현할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </StackTextBox>
+                        </StackWrap>
+                    </StackCard>
+                    <StackCard>
+                        <StackImageBox>
+                            <StackImageWrap>
+                                <Image src={socketio} alt="" className="rounded-full" />
+                            </StackImageWrap>
+                        </StackImageBox>
+                        <StackWrap>
+                            <StackSubject>SocketIO</StackSubject>
+                            <StackTextBox>
+                                <ul className="skill_desc">
+                                    <li>
+                                        룸과 네임스페이스를 이용해 채팅을 구현할 수 있습니다.
+                                    </li>
+                                </ul>
+                            </StackTextBox>
+                        </StackWrap>
+                    </StackCard>
+                    <StackCard>
+                        <StackImageBox>
+                            <StackImageWrap>
+                                <Image src={aws} alt="" />
+                            </StackImageWrap>
+                        </StackImageBox>
+                        <StackWrap>
+                            <StackSubject>AWS</StackSubject>
+                            <StackTextBox>
+                                <ul className="skill_desc">
+                                    <li>
+                                        AWS EC2 서비스를 이용해 서버를 구축하여 배포할 수 있습니다.
+                                    </li>
+                                    <li>
+                                        AWS S3를 사용한 경험이 있습니다.
+                                    </li>
+                                </ul>
+                            </StackTextBox>
+                        </StackWrap>
+                    </StackCard>
+                    <StackCard>
+                        <StackImageBox>
+                            <StackImageWrap>
+                                <Image src={github_action} alt="" className="p-2" />
+                            </StackImageWrap>
+                        </StackImageBox>
+                        <StackWrap>
+                            <StackSubject>Github Actions</StackSubject>
+                            <StackTextBox>
+                                <ul className="skill_desc">
+                                    <li>
+                                        Actions를 이용해 AWS 서비스에 CI/CD를 구축한 경험이 있습니다.
+                                    </li>
                                 </ul>
                             </StackTextBox>
                         </StackWrap>

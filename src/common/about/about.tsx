@@ -11,7 +11,7 @@ export default function About() {
 
     return (
         <div id="abouts" className="pt-16 xl:mt-0 xl:h-[60rem] flex flex-col justify-center items-center bg-[#E4E4D0] dark:bg-[#183D3D]">
-            <MSubject>About</MSubject>
+            <MSubject>About Me</MSubject>
             <Separator />
             <div className="mx-4 my-4 px-8 py-4 xl:py-8 flex flex-col xl:flex-row justify-center xl:justify-around items-center rounded-lg md:w-[45rem] lg:w-[42rem] xl:w-[66rem] 2xl:w-[72rem]">
                 <div className="mx-auto xl:mx-0 my-4 xl:my-0 w-64 sm:w-80 md:w-96 xl:w-1/4">

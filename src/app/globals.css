@@ -105,7 +105,7 @@ span {
 } */
 
 .observer {
-	@apply opacity-50 translate-y-16 2xl:translate-y-0 2xl:translate-x-16;
+	@apply opacity-50 translate-y-16 2xl:translate-y-4 2xl:translate-x-7;
 }
 
 .red {
