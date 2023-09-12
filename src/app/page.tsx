@@ -9,8 +9,8 @@ export default async function Home() {
   return (
     <div className="mt-16 relative">
       <Hero />
-      <About />
       <Project />
+      <About />
       <Skill />
     </div>
   )

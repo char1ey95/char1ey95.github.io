@@ -31,18 +31,23 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href={"#projects"} onClick={clickHandler}>
+                        Project
+                    </Link>
+                </li>
+                <li>
                     <Link href={"#abouts"} onClick={clickHandler}>
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link href={"#projects"} onClick={clickHandler}>
-                        Projects
+                    <Link href={"#skills"} onClick={clickHandler}>
+                        Skill
                     </Link>
                 </li>
                 <li>
-                    <Link href={"#skills"} onClick={clickHandler}>
-                        Skills
+                    <Link href={"https://char1ey.tistory.com/"} onClick={clickHandler}>
+                        Blog
                     </Link>
                 </li>
             </ul>
