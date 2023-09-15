@@ -26,7 +26,7 @@ const Project = async () => {
                 <SubjectSeparator />
                 <SimpleDesc>진행해왔던 프로젝트입니다</SimpleDesc>
             </div>
-            <div className="grid grid-cols-1 2xl:grid-cols-2 gap-y-4 justify-items-center">
+            <div className="mx-auto grid grid-cols-1 2xl:grid-cols-2 gap-y-4 justify-items-center 2xl:w-[94.5rem]">
                 {
                     projectItems.map((v: IResult, idx: number) => (
                         <ProjectCard key={idx} data={v} />
