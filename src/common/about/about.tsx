@@ -1,6 +1,6 @@
 import Separator from "@/components/line/separator"
 import MSubject from "@/components/subjects/mSubject"
-import photo from "/public/images/profile/profile.jpg"
+import photo from "/public/images/profile/profile.png"
 import GithubSvg from "@/svg/github"
 import MailSvg from "@/svg/mail"
 import TistorySvg from "@/svg/tistory"
